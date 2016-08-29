@@ -257,6 +257,8 @@ header {}
 footer {}
 footer ul li {list-style:none;}
 
+.img-cover {width:100%; }
+
 
 /* Text */
 .primary {color: #EF4857 ;} /* Primary text for the text colour */
