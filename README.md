@@ -4,12 +4,11 @@
 <h2>What spine <b>is</b></h2>
 
 <p>
-Spine is as the name aptly suggests is a Barebones CSS class based framework giving any project a backbone and keeping  page elements a solid structure.     
+Spine as the name aptly suggests is a Barebones CSS class based framework to give any project a backbone whilst keeping page elements solid.
 </p>
 
-
 <p>
- without all the bloat that comes with the some of the framework available.
+Spine is simple and comes with allwithout all the bloat that comes with the some of the framework available.
 Save time without doing those annoying framework class overides. :)
 </p>
 
@@ -21,7 +20,7 @@ Boootstrap is a great framework, but what if you not quite need everything that 
 </li>
 </ul>
 
-
+<hr/>
 
 <h2>Benefits</h2>
 
