@@ -1,6 +1,7 @@
 /* SPINE.css - Updated 28.08.16  - 5KB (reduced from 19KB).
 Creator: Matthew Twyford 
 URL: https://github.com/wilco5nine
+inspired by : www.getskeleton.com
 */
 body {margin:0; padding:0; font-family: "helvetica",sans-serif; }
 
@@ -125,54 +126,14 @@ body {margin:0; padding:0; font-family: "helvetica",sans-serif; }
 
 
 /* SKELETON - */
-
-
-/*
-* Skeleton V2.0.4
-* Copyright 2014, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 12/29/2014
-*/
-
-
-/* Table of contents
-––––––––––––––––––––––––––––––––––––––––––––––––––
-- Grid
-- Base Styles
-- Typography
-- Links
-- Buttons
-- Forms
-- Lists
-- Code
-- Tables
-- Spacing
-- Utilities
-- Clearing
-- Media Queries
-*/
-
-
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 /* X SMALL - XS devices */
 @media (min-width: 1em) { 
 html {font-size:9px;}
-
-.container { width: 90%; }
-.one          {width: 100%; float: left;}
-.two          {width: 50%; float: left;}
-.three        {width: 33.3333333333%; float: left;}
-.four         {width: 25%; float: left;}
-.five         {width: 20%; float: left;}
-.six          {width: 16.6666666667%; float: left;}
-.twelve       {width: 8.33333333333%; float: left;}    
-.twentyfour   {width: 4.166666666667%; float: left;}
-    
-
+.container { width: 90%; background: crimson;}
+.one,.two,.three,.four,.five,.six,.twelve, .twentyfour{width: 100%; float: left; }
 .xs-one          {width: 100%; float: left;}
 .xs-two          {width: 50%; float: left;}
 .xs-three        {width: 33.3333333333%; float: left;}
@@ -182,11 +143,13 @@ html {font-size:9px;}
 .xs-twelve       {width: 8.33333333333%; float: left;}    
 .xs-twentyfour   {width: 4.166666666667%; float: left;}
 }
+
+
 /* SMALL DEVICES - SM (landscape phones, 34em and up) */
 @media (min-width: 34em) { 
 html {font-size:12px;} 
 
-.container { width: 90%; }
+.container {width: 90%;  background: aqua;}
 .one          {width: 100%; float: left;}
 .two          {width: 50%; float: left;}
 .three        {width: 33.3333333333%; float: left;}
@@ -200,7 +163,7 @@ html {font-size:12px;}
 @media (min-width: 48em) { 
 html {font-size:13px;} 
 
-.container { width: 90%; }
+.container {width: 90%;  background:violet;}
 .one          {width: 100%; float: left;}
 .two          {width: 50%; float: left;}
 .three        {width: 33.3333333333%; float: left;}
@@ -214,7 +177,7 @@ html {font-size:13px;}
 @media (min-width: 62em) {
 html {font-size:14px;}
 
-.container { width: 90%; }
+.container {width: 90%;  background:teal;}
 .one          {width: 100%; float: left;}
 .two          {width: 50%; float: left;}
 .three        {width: 33.3333333333%; float: left;}
@@ -228,7 +191,7 @@ html {font-size:14px;}
 @media (min-width: 75em) {
 html {font-size:15px;} 
 
-.container { width: 90%; }
+.container {width: 90%;  background:chocolate;}
 .one          {width: 100%; float: left;}
 .two          {width: 50%; float: left;}
 .three        {width: 33.3333333333%; float: left;}
@@ -239,10 +202,8 @@ html {font-size:15px;}
 .twentyfour   {width: 4.166666666667%; float: left;}
 }
 
-.container { position: relative; width: 100%; max-width: 1100px; margin: 0 auto; padding: 0 20px; box-sizing: border-box; }
+.container { position: relative; width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 1rem; box-sizing: border-box; }
 
-/* For devices larger than 400px */
-@media (min-width: 400px) { .container { width: 90%; padding: 0;} }
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
@@ -347,7 +308,6 @@ footer {}
 footer ul li {list-style:none;}
 
 
-
 /* Text */
 .primary {color: #EF4857 ;} /* Primary text for the text colour */
 .secondary {color: #48AAEF ;} /* Secondary text for the text colour */
@@ -401,7 +361,6 @@ footer ul li {list-style:none;}
 .border-radius30 {border-radius:30px;}
 .border-radius40 {border-radius:40px;}
 .border-radius50 {border-radius:50px;}
-
 
 .text-left {text-align: left}
 .text-center {text-align: center}
@@ -542,7 +501,9 @@ small {color:inherit; font-weight:200; font-size:0.8rem;}
 .bar-thirdly { background: #48EF94 ; display: block; height: 2px; margin: 15px auto; width: 80px;}
 .bar-fourthly { background: #EFAC48 ; display: block; height: 2px; margin: 15px auto; width: 80px;}
 
+.block{display:block;} 
+.no-border {border:none;} 
+.nolist {list-style:none;} 
 
-.block{display:block;} .no-border {border:none;} .nolist {list-style:none;} 
 .underlined { text-decoration: underline!important;}
 .iframe {width:100%; border:none;}
