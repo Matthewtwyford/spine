@@ -36,7 +36,6 @@ Column. Units upto 12 columns layout.
 
 <h2>Todo</h2>
 <ul>
-<li>Image classes</li>
 <li>Remove all Px units</li>
 <li>Finish and test media queries</li>
 <li>Add SASS support</li>
