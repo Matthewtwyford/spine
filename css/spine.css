@@ -106,8 +106,9 @@ body {margin:0; padding:0; font-family: "helvetica",sans-serif; }
 .prl {padding-right:15rem!important;}
 .prxl {padding-right:20rem!important;}
 
-.pxxs {padding-top:0.4rem!important; padding-bottom:0.4rem!important;}
-.pxs {padding-top:0.9375rem!important; padding-bottom:0.9375rem!important;}
+.pxxs {padding:0.4rem!important;}
+.pxs {padding:0.9375rem!important;}
+
 .ps {padding-top:5rem!important;  padding-bottom:5rem!important;}
 .pm {padding-top:10rem!important;  padding-bottom:10rem!important;}
 .pl {padding-top:15rem!important; padding-bottom:15rem!important;}
@@ -143,7 +144,6 @@ html {font-size:9px;}
 .xs-twelve       {width: 8.33333333333%; float: left;}    
 .xs-twentyfour   {width: 4.166666666667%; float: left;}
 }
-
 
 /* SMALL DEVICES - SM (landscape phones, 34em and up) */
 @media (min-width: 34em) { 
