@@ -25,11 +25,11 @@ Boootstrap is a great framework, but what if you not quite need everything that 
 <h2>Benefits</h2>
 
 <p>
-All padding and Margins untilize the more responsivie friendly Relative REM unit, as oppesed absolute units such as Px. 
+All padding and margins utilize the more responsivie friendly Relative REM unit, as oppesed to the absolute units Px. 
 </p>
 
 <p>
-Column. units upto 12 columns layout.
+Column. Units upto 12 columns layout.
 </p>
 
 <hr/>
