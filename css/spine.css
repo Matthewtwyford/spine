@@ -161,22 +161,82 @@ body {margin:0; padding:0; font-family: "helvetica",sans-serif; }
 /* X SMALL - XS devices */
 @media (min-width: 1em) { 
 html {font-size:9px;}
+
+.container { width: 90%; }
+.one          {width: 100%; float: left;}
+.two          {width: 50%; float: left;}
+.three        {width: 33.3333333333%; float: left;}
+.four         {width: 25%; float: left;}
+.five         {width: 20%; float: left;}
+.six          {width: 16.6666666667%; float: left;}
+.twelve       {width: 8.33333333333%; float: left;}    
+.twentyfour   {width: 4.166666666667%; float: left;}
+    
+
+.xs-one          {width: 100%; float: left;}
+.xs-two          {width: 50%; float: left;}
+.xs-three        {width: 33.3333333333%; float: left;}
+.xs-four         {width: 25%; float: left;}
+.xs-five         {width: 20%; float: left;}
+.xs-six          {width: 16.6666666667%; float: left;}
+.xs-twelve       {width: 8.33333333333%; float: left;}    
+.xs-twentyfour   {width: 4.166666666667%; float: left;}
 }
 /* SMALL DEVICES - SM (landscape phones, 34em and up) */
 @media (min-width: 34em) { 
 html {font-size:12px;} 
+
+.container { width: 90%; }
+.one          {width: 100%; float: left;}
+.two          {width: 50%; float: left;}
+.three        {width: 33.3333333333%; float: left;}
+.four         {width: 25%; float: left;}
+.five         {width: 20%; float: left;}
+.six          {width: 16.6666666667%; float: left;}
+.twelve       {width: 8.33333333333%; float: left;}    
+.twentyfour   {width: 4.166666666667%; float: left;}
 }
 /* MEDIUM DEVICES - MD (tablets, 48em and up) */
 @media (min-width: 48em) { 
 html {font-size:13px;} 
+
+.container { width: 90%; }
+.one          {width: 100%; float: left;}
+.two          {width: 50%; float: left;}
+.three        {width: 33.3333333333%; float: left;}
+.four         {width: 25%; float: left;}
+.five         {width: 20%; float: left;}
+.six          {width: 16.6666666667%; float: left;}
+.twelve       {width: 8.33333333333%; float: left;}    
+.twentyfour   {width: 4.166666666667%; float: left;}
 }
 /* LARGE DEVICES - LG (desktops, 62em and up) */
 @media (min-width: 62em) {
 html {font-size:14px;}
+
+.container { width: 90%; }
+.one          {width: 100%; float: left;}
+.two          {width: 50%; float: left;}
+.three        {width: 33.3333333333%; float: left;}
+.four         {width: 25%; float: left;}
+.five         {width: 20%; float: left;}
+.six          {width: 16.6666666667%; float: left;}
+.twelve       {width: 8.33333333333%; float: left;}    
+.twentyfour   {width: 4.166666666667%; float: left;}
 }
 /* EXTRA LARGE DEVICES - LG (large desktops, 75em and up) */
 @media (min-width: 75em) {
 html {font-size:15px;} 
+
+.container { width: 90%; }
+.one          {width: 100%; float: left;}
+.two          {width: 50%; float: left;}
+.three        {width: 33.3333333333%; float: left;}
+.four         {width: 25%; float: left;}
+.five         {width: 20%; float: left;}
+.six          {width: 16.6666666667%; float: left;}
+.twelve       {width: 8.33333333333%; float: left;}    
+.twentyfour   {width: 4.166666666667%; float: left;}
 }
 
 .container { position: relative; width: 100%; max-width: 1100px; margin: 0 auto; padding: 0 20px; box-sizing: border-box; }
@@ -186,16 +246,7 @@ html {font-size:15px;}
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
-.container { width: 90%; }
 
-.one          {width: 100%; float: left;}
-.two          {width: 50%; float: left;}
-.three        {width: 33.3333333333%; float: left;}
-.four         {width: 25%; float: left;}
-.five         {width: 20%; float: left;}
-.six          {width: 16.6666666667%; float: left;}
-.twelve       {width: 8.33333333333%; float: left;}    
-.twentyfour   {width: 4.166666666667%; float: left;}
 
 /* Offsets */
 .offset-by-one.column, .offset-by-one.columns  { margin-left: 8.66666666667%; }
@@ -220,7 +271,6 @@ html {font-size:15px;}
 /*
 html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
-
 
 /* Buttons */
 .button,button, input[type="submit"],input[type="reset"],input[type="button"] {display: inline-block; height: 38px; padding: 0 30px; color: #555; text-align: center; font-size: 11px; font-weight: 600; line-height: 38px; letter-spacing: .1rem; text-transform: uppercase; text-decoration: none; white-space: nowrap; background-color: transparent; border-radius: 4px; border: 1px solid #bbb; cursor: pointer; box-sizing: border-box; }
@@ -295,6 +345,8 @@ header {}
 /* Footer */
 footer {}
 footer ul li {list-style:none;}
+
+
 
 /* Text */
 .primary {color: #EF4857 ;} /* Primary text for the text colour */
