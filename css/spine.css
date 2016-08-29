@@ -4,10 +4,13 @@ Creator: Matthew Twyford
 URL: https://github.com/wilco5nine
 inspired by : www.getskeleton.com
 */
+/* Colors*/
+/* Dimensions */
 body {
   margin: 0;
   padding: 0;
-  font-family: Raleway, sans-serif; }
+  font-family: Raleway, sans-serif;
+  color: #333333; }
 
 /* Text */
 .primary {
@@ -421,13 +424,6 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
   content: "";
   display: table;
   clear: both; }
-
-html {
-  color: #353535; }
-
-body {
-  margin: 0;
-  padding: 0; }
 
 /* Header */
 /* Footer */
