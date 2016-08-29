@@ -23,6 +23,7 @@ html {font-size:9px;}
 .xs-four         {width: 25%; float: left;}
 .xs-five         {width: 20%; float: left;}
 .xs-six          {width: 16.6666666667%; float: left;}
+.xs-eight        {width: 12.5%; float:left;}
 .xs-twelve       {width: 8.33333333333%; float: left;}    
 }
 
@@ -37,6 +38,7 @@ html {font-size:10px;}
 .four         {width: 25%; float: left;}
 .five         {width: 20%; float: left;}
 .six          {width: 16.6666666667%; float: left;}
+.eight        {width: 12.5%; float:left;}
 .twelve       {width: 8.33333333333%; float: left;}    
 }
 /* MEDIUM DEVICES - MD (tablets, 48em and up) */
@@ -50,6 +52,7 @@ html {font-size:13px;}
 .four         {width: 25%; float: left;}
 .five         {width: 20%; float: left;}
 .six          {width: 16.6666666667%; float: left;}
+.eight        {width: 12.5%; float:left;}
 .twelve       {width: 8.33333333333%; float: left;}
 }
 /* LARGE DEVICES - LG (desktops, 62em and up) */
@@ -63,6 +66,7 @@ html {font-size:14px;}
 .four         {width: 25%; float: left;}
 .five         {width: 20%; float: left;}
 .six          {width: 16.6666666667%; float: left;}
+.eight        {width: 12.5%; float:left;}
 .twelve       {width: 8.33333333333%; float: left;}
 }
 /* EXTRA LARGE DEVICES - LG (large desktops, 75em and up) */
@@ -70,13 +74,14 @@ html {font-size:14px;}
 html {font-size:15px;} 
 
 .container {width: 90%;}
-.one          {width: 100%; float: left;}
-.two          {width: 50%; float: left;}
-.three        {width: 33.3333333333%; float: left;}
-.four         {width: 25%; float: left;}
-.five         {width: 20%; float: left;}
-.six          {width: 16.6666666667%; float: left;}
-.twelve       {width: 8.33333333333%; float: left;}    
+.one          {width: 100%; float:left;}
+.two          {width: 50%; float:left;}
+.three        {width: 33.3333333333%; float:left;}
+.four         {width: 25%; float:left;}
+.five         {width: 20%; float:left;}
+.six          {width: 16.6666666667%; float:left;}
+.eight        {width: 12.5%; float:left;}
+.twelve       {width: 8.33333333333%; float:left;}    
 }
 
 .container { position: relative; width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 1rem; box-sizing: border-box; }
