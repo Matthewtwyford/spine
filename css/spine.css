@@ -3,13 +3,11 @@ Creator: Matthew Twyford
 URL: https://github.com/wilco5nine
 inspired by : www.getskeleton.com
 */
-body {margin:0; padding:0; font-family: "helvetica",sans-serif; }
+body {margin:0; padding:0; font-family: "Raleway",sans-serif; }
 
 .o1 {opacity:0.1;} .o2 {opacity:0.2;} .o3 {opacity:0.3;} .o4 {opacity:0.4;} .o5 {opacity:0.5;} .o6 {opacity:0.6;} .o7 {opacity:0.7;} .o8 {opacity:0.8;} .o9 {opacity:0.9;} 
 
-.z-1 {z-index:-1;} .z-2 {z-index:-2;}
-.z-3 {z-index:-3;} .z-4 {z-index:-4;}
-.z-5 {z-index:-5;} .z1 {z-index:1;}
+
 .z2 {z-index:2;} .z3 {z-index:3;}
 .z4 {z-index:4;} .z5 {z-index:5;}
 .z6 {z-index:6;} .z7 {z-index:7;}
@@ -64,6 +62,7 @@ body {margin:0; padding:0; font-family: "helvetica",sans-serif; }
 .mrl {margin-right:15rem!important;}
 .mrxl {margin-right:20rem!important;}
 
+
 .mxxs {margin-top:0.4rem!important; margin-bottom:0.4rem!important;}
 .mxs {margin-top:0.9375rem!important; margin-bottom:0.9375rem!important;}
 .ms {margin-top:5rem!important;  margin-bottom:5rem!important;}
@@ -72,6 +71,8 @@ body {margin:0; padding:0; font-family: "helvetica",sans-serif; }
 .mx {margin-top:20rem!important; margin-bottom:20rem!important;}
 
 /* Paddings */
+
+
 .p0 {padding:0px 0px 0px 0px!important;}
 .pt0 {padding-top:0rem!important;}
 .pr0 {padding-right:0rem!important;} 
@@ -114,16 +115,9 @@ body {margin:0; padding:0; font-family: "helvetica",sans-serif; }
 .pl {padding-top:15rem!important; padding-bottom:15rem!important;}
 .pxl {padding-top:20rem!important; padding-bottom:15rem!important;}
 
-/* X SMALL - XS devices */
-@media (min-width: 1em) { html {font-size:9px;} }
-/* SMALL DEVICES - SM (landscape phones, 34em and up) */
-@media (min-width: 34em) { html {font-size:12px;} }
-/* MEDIUM DEVICES - MD (tablets, 48em and up) */
-@media (min-width: 48em) { html {font-size:13px;} }
-/* LARGE DEVICES - LG (desktops, 62em and up) */
-@media (min-width: 62em) {html {font-size:14px;} }
-/* EXTRA LARGE DEVICES - LG (large desktops, 75em and up) */
-@media (min-width: 75em) { html {font-size:15px;} }
+
+/* Box model */
+.box{margin:0.9375rem!important; padding:0.9375rem!important; border: 1px solid #E3E3E3;}
 
 
 /* SKELETON - */
@@ -132,9 +126,9 @@ body {margin:0; padding:0; font-family: "helvetica",sans-serif; }
 
 /* X SMALL - XS devices */
 @media (min-width: 1em) { 
-html {font-size:9px;}
-.container { width: 90%; background: crimson;}
-.one,.two,.three,.four,.five,.six,.twelve, .twentyfour{width: 100%; float: left; }
+html {font-size:10px;}
+.container { width: 90%; background:;}
+.one,.two,.three,.four,.five,.six,.twelve {width: 100%; float: left; }
 .xs-one          {width: 100%; float: left;}
 .xs-two          {width: 50%; float: left;}
 .xs-three        {width: 33.3333333333%; float: left;}
@@ -142,14 +136,13 @@ html {font-size:9px;}
 .xs-five         {width: 20%; float: left;}
 .xs-six          {width: 16.6666666667%; float: left;}
 .xs-twelve       {width: 8.33333333333%; float: left;}    
-.xs-twentyfour   {width: 4.166666666667%; float: left;}
 }
 
 /* SMALL DEVICES - SM (landscape phones, 34em and up) */
 @media (min-width: 34em) { 
 html {font-size:12px;} 
 
-.container {width: 90%;  background: aqua;}
+.container {width: 90%;  background:;}
 .one          {width: 100%; float: left;}
 .two          {width: 50%; float: left;}
 .three        {width: 33.3333333333%; float: left;}
@@ -157,41 +150,38 @@ html {font-size:12px;}
 .five         {width: 20%; float: left;}
 .six          {width: 16.6666666667%; float: left;}
 .twelve       {width: 8.33333333333%; float: left;}    
-.twentyfour   {width: 4.166666666667%; float: left;}
 }
 /* MEDIUM DEVICES - MD (tablets, 48em and up) */
 @media (min-width: 48em) { 
 html {font-size:13px;} 
 
-.container {width: 90%;  background:violet;}
+.container {width: 90%;  background:;}
 .one          {width: 100%; float: left;}
 .two          {width: 50%; float: left;}
 .three        {width: 33.3333333333%; float: left;}
 .four         {width: 25%; float: left;}
 .five         {width: 20%; float: left;}
 .six          {width: 16.6666666667%; float: left;}
-.twelve       {width: 8.33333333333%; float: left;}    
-.twentyfour   {width: 4.166666666667%; float: left;}
+.twelve       {width: 8.33333333333%; float: left;}
 }
 /* LARGE DEVICES - LG (desktops, 62em and up) */
 @media (min-width: 62em) {
 html {font-size:14px;}
 
-.container {width: 90%;  background:teal;}
+.container {width: 90%;  background:;}
 .one          {width: 100%; float: left;}
 .two          {width: 50%; float: left;}
 .three        {width: 33.3333333333%; float: left;}
 .four         {width: 25%; float: left;}
 .five         {width: 20%; float: left;}
 .six          {width: 16.6666666667%; float: left;}
-.twelve       {width: 8.33333333333%; float: left;}    
-.twentyfour   {width: 4.166666666667%; float: left;}
+.twelve       {width: 8.33333333333%; float: left;}
 }
 /* EXTRA LARGE DEVICES - LG (large desktops, 75em and up) */
 @media (min-width: 75em) {
 html {font-size:15px;} 
 
-.container {width: 90%;  background:chocolate;}
+.container {width: 90%;  background:;}
 .one          {width: 100%; float: left;}
 .two          {width: 50%; float: left;}
 .three        {width: 33.3333333333%; float: left;}
@@ -199,7 +189,6 @@ html {font-size:15px;}
 .five         {width: 20%; float: left;}
 .six          {width: 16.6666666667%; float: left;}
 .twelve       {width: 8.33333333333%; float: left;}    
-.twentyfour   {width: 4.166666666667%; float: left;}
 }
 
 .container { position: relative; width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 1rem; box-sizing: border-box; }
@@ -234,12 +223,13 @@ html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 
 /* Buttons */
-.button,button, input[type="submit"],input[type="reset"],input[type="button"] {display: inline-block; height: 38px; padding: 0 30px; color: #555; text-align: center; font-size: 11px; font-weight: 600; line-height: 38px; letter-spacing: .1rem; text-transform: uppercase; text-decoration: none; white-space: nowrap; background-color: transparent; border-radius: 4px; border: 1px solid #bbb; cursor: pointer; box-sizing: border-box; }
+.button,button, input[type="submit"],input[type="reset"],input[type="button"] {display: inline-block; height: 38px; padding: 0 1.0rem; color: #555; text-align: center; font-size: 0.7rem; font-weight: 600; line-height: 38px; letter-spacing: 0.1rem; text-transform: uppercase; text-decoration: none; white-space: nowrap; background-color: transparent; border-radius: 4px; border: 1px solid #bbb; cursor: pointer; box-sizing: border-box; }
 
 .button:hover,button:hover,input[type="submit"]:hover,input[type="reset"]:hover,input[type="button"]:hover,.button:focus,
 button:focus,input[type="submit"]:focus, input[type="reset"]:focus, input[type="button"]:focus { color: #333; border-color: #888; outline: 0; }
 
 .button.button-primary,button.button-primary,input[type="submit"].button-primary,input[type="reset"].button-primary,input[type="button"].button-primary { color: #FFF; background-color: #33C3F0; border-color: #33C3F0; }
+
 .button.button-primary:hover, button.button-primary:hover, input[type="submit"].button-primary:hover, input[type="reset"].button-primary:hover,
 input[type="button"].button-primary:hover,.button.button-primary:focus,
 button.button-primary:focus,input[type="submit"].button-primary:focus,
@@ -293,9 +283,10 @@ pre,blockquote,dl,figure,table,p,ul,ol,form {margin-bottom: 2.5rem;}
 .u-max-full-width {max-width: 100%; box-sizing: border-box; }
 .pull-right {float: right; }
 .pull-left {float: left; }
+.clear {clear:both;}
 
 /* Clearing */
-.container:after, .row:after, .u-cf {content: ""; display: table;clear: both; }
+.container:after, .row:after {content: ""; display: table;clear: both; }
 
 html {color:#353535;}
 body {margin:0; padding:0;   }
@@ -348,6 +339,7 @@ footer ul li {list-style:none;}
 .shadow1 {box-shadow: 0 4px 3px 1px #E0DFDF;}
 .shadow2 {box-shadow: -1px 10px 10px -5px #CCCCCC;}
 .shadow3 {box-shadow: -1px 10px 3px 1px #CCCCCC;}
+.shadow4 {border-bottom: 2px solid #E0E0E0;}
 
 .inshadow1{box-shadow: 0 10px 13px -7px #CCCCCC inset;}
 .inshadow2{box-shadow: 0 10px 13px -7px #919191 inset;}
