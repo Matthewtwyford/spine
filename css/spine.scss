@@ -1,6 +1,7 @@
-/* SPINE.css - Updated 28.08.16  - 5KB (reduced from 19KB).
+/* SPINE.css - Updated 30.08.16 
+Verion - 1.1-beta
 Creator:Matthew Twyford 
-URL:https://github.com/wilco5nine
+URL: https://github.com/wilco5nine
 inspired by :www.getskeleton.com
 */
 
@@ -343,16 +344,9 @@ footer ul li {list-style:none;}
 .inshadow2{box-shadow:0 10px 13px -7px #919191 inset;}
 
 /* Border radius */
-.border-radius5 {border-radius:5px;} 
-.border-radius10 {border-radius:10px;} 
-.border-radius15 {border-radius:15px;}
-.border-radius20 {border-radius:15px;}
-.border-radius25 {border-radius:25px;}
-.border-radius30 {border-radius:30px;}
-.border-radius40 {border-radius:40px;}
-.border-radius50 {border-radius:50px;}
-
-
+.rad1 {border-radius:$dim1;} 
+.rad2 {border-radius:$dim2;} 
+.rad3 {border-radius:$dim3;}
 
 /* Input */
 .input {width:100%; float:left; clear:both;}
@@ -360,11 +354,11 @@ footer ul li {list-style:none;}
 /* Border */
 .no-border {border:none;}
 
-.border-grey {border:1px solid #E3E3E3;}
-.border-grey-t {border-top:1px solid  #E3E3E3;}
-.border-grey-l {border-left:1px solid  #E3E3E3;}
-.border-grey-b {border-bottom:1px solid  #E3E3E3;}
-.border-grey-r {border-right:1px solid #E3E3E3;}
+.border-grey {border:1px solid $grey-light;}
+.border-grey-t {border-top:1px solid $grey-light;}
+.border-grey-l {border-left:1px solid  $grey-light;}
+.border-grey-b {border-bottom:1px solid  $grey-light;}
+.border-grey-r {border-right:1px solid $grey-light;}
 
 .border-white {border:1px solid $white-color;}
 .border-white-t {border-top:1px solid $white-color;}

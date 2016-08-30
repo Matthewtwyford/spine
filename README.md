@@ -36,5 +36,7 @@ Column. Units upto 12 columns layout.
 <ul>
 <li>Remove all Px units</li>
 <li>Finish and test media queries</li>
-<li>Add SASS support</li>
+<li>Add SASS support - added - finsih vars $dim</li>
+<li>Button stlying - inverse</li>
+<li>Add code coding</li>
 </ul>

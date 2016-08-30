@@ -1,7 +1,8 @@
 @charset "UTF-8";
-/* SPINE.css - Updated 28.08.16  - 5KB (reduced from 19KB).
+/* SPINE.css - Updated 30.08.16 
+Verion - 1.1-beta
 Creator:Matthew Twyford 
-URL:https://github.com/wilco5nine
+URL: https://github.com/wilco5nine
 inspired by :www.getskeleton.com
 */
 /* Dimensions */
@@ -768,29 +769,14 @@ footer ul li {
   box-shadow: 0 10px 13px -7px #919191 inset; }
 
 /* Border radius */
-.border-radius5 {
-  border-radius: 5px; }
+.rad1 {
+  border-radius: 0.5rem; }
 
-.border-radius10 {
-  border-radius: 10px; }
+.rad2 {
+  border-radius: 1rem; }
 
-.border-radius15 {
-  border-radius: 15px; }
-
-.border-radius20 {
-  border-radius: 15px; }
-
-.border-radius25 {
-  border-radius: 25px; }
-
-.border-radius30 {
-  border-radius: 30px; }
-
-.border-radius40 {
-  border-radius: 40px; }
-
-.border-radius50 {
-  border-radius: 50px; }
+.rad3 {
+  border-radius: 2.5rem; }
 
 /* Input */
 .input {
@@ -803,19 +789,19 @@ footer ul li {
   border: none; }
 
 .border-grey {
-  border: 1px solid #E3E3E3; }
+  border: 1px solid #EEEEEE; }
 
 .border-grey-t {
-  border-top: 1px solid  #E3E3E3; }
+  border-top: 1px solid #EEEEEE; }
 
 .border-grey-l {
-  border-left: 1px solid  #E3E3E3; }
+  border-left: 1px solid #EEEEEE; }
 
 .border-grey-b {
-  border-bottom: 1px solid  #E3E3E3; }
+  border-bottom: 1px solid #EEEEEE; }
 
 .border-grey-r {
-  border-right: 1px solid #E3E3E3; }
+  border-right: 1px solid #EEEEEE; }
 
 .border-white {
   border: 1px solid #FFFFFF; }
