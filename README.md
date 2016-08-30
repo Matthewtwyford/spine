@@ -31,9 +31,7 @@ All padding and margins utilize the more responsivie friendly Relative REM unit,
 <p>
 Column. Units upto 12 columns layout.
 </p>
-
 <hr/>
-
 <h2>Todo</h2>
 <ul>
 <li>Remove all Px units</li>
