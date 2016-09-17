@@ -14,7 +14,7 @@ Save time without doing those annoying framework class overides. :)
 
 <h2>What spine <b>is not</b></h2>
 <ul>
-<li>Spine is not a completed Framework, and does not include any scripting</li>
+<li>Spine is not a completed Framework, and does not include any scripting.</li>
 <li>
 Boootstrap is a great framework, but what if you dont need everything that comes with it? 
 </li>

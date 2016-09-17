@@ -1,17 +1,25 @@
-/* SPINE.css - Updated 30.08.16 
-Verion - 1.1-beta
+/* SPINE.css - Updated 17.09.16 
+Verion - 1.2-beta
 Creator:Matthew Twyford 
 URL: https://github.com/wilco5nine
-inspired by :www.getskeleton.com
 */
 
-$font:Raleway,sans-serif;
+/* Font */
+$font1:Raleway,sans-serif;
+$font2:Pacifico,sans-serif;
+$font3:Amatic SC,sans-serif;
 $text-color:#333333;
 $text-weight:200;
 $text-height:2.0rem;
 $link-color:#353535;
+$h1:4.0rem;
+$h2:3.6rem;
+$h3:3.0rem;
+$h4:2.4rem;
+$h5:1.8rem;
+$h6:1.5rem;
 
-
+/* Colours */
 $primary-color:#EF4857;
 $secondary-color:#48AAEF;
 $thirdly-color:#48EF94;
@@ -26,7 +34,7 @@ $grey-medium:#ECECEC;
 $grey-dark:#9A9A9A;
 
 /* Dimensions */
-$container-width:1200px;
+$container-width:70%;
 
 $dim0:0;
 $dim1:0.5rem;
@@ -38,24 +46,14 @@ $dim6:10rem;
 $dim7:15rem;
 $dim8:20rem;
 
-$h1:4.0rem;
-$h2:3.6rem;
-$h3:3.0rem;
-$h4:2.4rem;
-$h5:1.8rem;
-$h6:1.5rem;
-
-body {margin:0; padding:0; font-family:$font; color:$text-color; font-weight:$text-weight; line-height:$text-height; }
-
+body {margin:0; padding:0; font-family:$font1; color:$text-color; font-weight:$text-weight; line-height:$text-height; }
 /* Header */
 header {}
-
 /* Footer */
 footer {}
-footer ul li {list-style:none;}
 
 /* Typography */
-h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6 {margin-top:0; margin-bottom:1.2rem; font-weight:300; clear:both; width:100%; float:left; }
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6 {margin-top:0; margin-bottom:$dim2; font-weight:300; clear:both; width:100%;}
 h1,.h1 {font-size:$h1; line-height:100%; letter-spacing:-.1rem;}
 h2,.h2 {font-size:$h2; line-height:100%; letter-spacing:-.1rem;}
 h3,.h3 {font-size:$h3; line-height:100%; letter-spacing:-.1rem;}
@@ -63,12 +61,16 @@ h4,.h4 {font-size:$h4; line-height:100%; letter-spacing:-.08rem;}
 h5,.h5 {font-size:$h5; line-height:100%; letter-spacing:-.05rem;}
 h6,.h6 {font-size:$h6; line-height:100%; letter-spacing:0;}
 
+.font1 {font-family:$font1;}
+.font2 {font-family:$font2;}
+.font3 {font-family:$font3;}
+
 .text-left {text-align:left}
 .text-center {text-align:center}
 .text-right {text-align:right;}
 .text-justify {text-align:justify;}
 
-hr {margin-top:3rem; margin-bottom:3.5rem; border-width:0; border-top:1px solid #E1E1E1; }
+hr {margin-top:$dim1; margin-bottom:$dim2; border-width:0; border-top:1px solid $grey-light;}
 p {font-size:1.0rem; line-height:$text-height;}
 a {color:$link-color;}
 a:hover, a:active , a:focus {text-decoration:none; color:inherit;}
@@ -84,6 +86,263 @@ small {color:inherit; font-weight:200; font-size:0.8rem;}
 .thick {font-weight:700;}
 .underlined {text-decoration:underline;}
 
+
+
+
+/* Text */
+.primary {color:$primary-color;}
+.secondary {color:$secondary-color;}
+.thirdly {color:$thirdly-color;}
+.fourthly {color:$fourthly-color;}
+/* Background */
+.BGprimary {background:$primary-color;}
+.BGsecondary {background:$secondary-color;}
+.BGthirdly {background:$thirdly-color;}
+.BGfourthly {background:$fourthly-color;}
+/* Whites */
+.white {color:$white-color;} 
+.BGwhite {background:$white-color;}
+/* Off white */
+.offwhite {color:$white-off-color;} 
+.BGoffwhite {background:$white-off-color;}
+/* Greys */
+.lightgrey, .lightgrey a {color:$grey-light;} 
+.BGlightgrey {background:$grey-light;}
+.mediumgrey, mediumgrey a {color:$grey-medium;} 
+.BGmediumgrey {background:$grey-medium;}
+.BGdarkgrey {background:$grey-dark;}
+.darkgrey, .darkgrey a {color:$grey-dark;}
+/* Blacks */
+.black, .black a {color:$black-color;}
+.BGblack {background:$black-color;}
+/* Status colours */
+.warning {color:$warning-color;}
+.safe {color:$safe-color;}
+
+/* Grid ––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* X SMALL - XS devices */
+@media (min-width:1em) {
+html {font-size:9px;}
+.container {width:100%;}
+.one,.two,.three,.four,.five,.six,.twelve {width:100%; float:left;}
+    
+.xs-one          {width:100%; float:left;}
+.xs-two          {width:50%; float:left;}
+.xs-three        {width:33.3333333333%; float:left;}
+.xs-four         {width:25%; float:left;}
+.xs-five         {width:20%; float:left;}
+.xs-six          {width:16.6666666667%; float:left;}
+.xs-eight        {width:12.5%; float:left;}
+.xs-twelve       {width:8.33333333333%; float:left;}    
+}
+/* SMALL DEVICES - SM - Phablets (landscape phones, 34em and up) */
+@media (min-width:34em) {
+html {font-size:10px;} 
+.container {width:100%;}
+.one          {width:100%; float:left;}
+.two          {width:50%; float:left;}
+.three        {width:33.3333333333%; float:left;}
+.four         {width:25%; float:left;}
+.five         {width:20%; float:left;}
+.six          {width:16.6666666667%; float:left;}
+.eight        {width:12.5%; float:left;}
+.twelve       {width:8.33333333333%; float:left;}    
+}
+/* MEDIUM DEVICES - MD (tablets, 48em and up) */
+@media (min-width:48em) {
+html {font-size:13px;} 
+
+.container {width:90%;}
+.one          {width:100%; float:left;}
+.two          {width:50%; float:left;}
+.three        {width:33.3333333333%; float:left;}
+.four         {width:25%; float:left;}
+.five         {width:20%; float:left;}
+.six          {width:16.6666666667%; float:left;}
+.eight        {width:12.5%; float:left;}
+.twelve       {width:8.33333333333%; float:left;}
+}
+/* LARGE DEVICES - LG (desktops, 62em and up) */
+@media (min-width:62em) {
+html {font-size:14px;}
+
+.container {width:90%;}
+.one          {width:100%; float:left;}
+.two          {width:50%; float:left;}
+.three        {width:33.3333333333%; float:left;}
+.four         {width:25%; float:left;}
+.five         {width:20%; float:left;}
+.six          {width:16.6666666667%; float:left;}
+.eight        {width:12.5%; float:left;}
+.twelve       {width:8.33333333333%; float:left;}
+}
+/* EXTRA LARGE DEVICES - LG (large desktops, 75em and up) */
+@media (min-width:75em) {
+html {font-size:15px;} 
+
+.container {width:90%;}
+.one          {width:100%; float:left;}
+.two          {width:50%; float:left;}
+.three        {width:33.3333333333%; float:left;}
+.four         {width:25%; float:left;}
+.five         {width:20%; float:left;}
+.six          {width:16.6666666667%; float:left;}
+.eight        {width:12.5%; float:left;}
+.twelve       {width:8.33333333333%; float:left;}    
+}
+
+.container {position:relative; width:100%; max-width:$container-width; margin:0 auto; padding:0 1rem; box-sizing:border-box; }
+.container:after, .row:after {content:""; display:table; clear:both; }
+
+
+/* Buttons */
+.button,button, input[type="submit"],input[type="reset"],input[type="button"] 
+{display:inline-block; height:38px; padding:0 1.0rem; color:#555; text-align:center; font-size:0.7rem; font-weight:600; line-height:38px; letter-spacing:0.1rem; text-transform:uppercase; text-decoration:none; white-space:nowrap; background-color:transparent; border-radius:4px; border:1px solid #bbb; cursor:pointer; box-sizing:border-box; }
+
+.button:hover,button:hover,input[type="submit"]:hover,input[type="reset"]:hover,input[type="button"]:hover,.button:focus,
+button:focus,input[type="submit"]:focus, input[type="reset"]:focus, input[type="button"]:focus 
+{color:#333; border-color:#888; outline:0; }
+
+.button.button-primary,button.button-primary,input[type="submit"].button-primary,input[type="reset"].button-primary,input[type="button"].button-primary {color:#FFF; background-color:#33C3F0; border-color:#33C3F0; }
+
+.button.button-primary:hover, button.button-primary:hover, input[type="submit"].button-primary:hover, input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,.button.button-primary:focus,
+button.button-primary:focus,input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,input[type="button"].button-primary:focus {color:#FFF; background-color:#1EAEDB; border-color:#1EAEDB; }
+
+
+/* Forms */
+input[type="email"],input[type="number"],input[type="search"],input[type="text"],input[type="tel"],input[type="url"],input[type="password"],textarea,select {
+height:38px;  padding:6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+background-color:#fff; border:1px solid #D1D1D1;
+border-radius:4px; box-shadow:none;
+box-sizing:border-box; }
+
+/* Removes awkward default styles on some inputs for iOS */
+input[type="email"],input[type="number"],input[type="search"],input[type="text"],
+input[type="tel"],input[type="url"],input[type="password"],textarea {-webkit-appearance:none; -moz-appearance:none; appearance:none; }
+
+textarea {min-height:65px; padding-top:6px; padding-bottom:6px; }
+input[type="email"]:focus,input[type="number"]:focus,input[type="search"]:focus,input[type="text"]:focus,input[type="tel"]:focus,input[type="url"]:focus,input[type="password"]:focus,textarea:focus,select:focus {border:1px solid #33C3F0; outline:0; }
+label,legend {display:block; margin-bottom:.5rem; font-weight:600; }
+fieldset {padding:0; border-width:0; }
+input[type="checkbox"],input[type="radio"] {display:inline; }
+label > .label-body {display:inline-block; margin-left:.5rem;  font-weight:normal; }
+
+/* Lists */
+.nolist {list-style:none;} 
+ul {list-style:circle inside; }
+ol {list-style:decimal inside; }
+ol, ul {padding-left:0; margin-top:0; }
+ul ul, ul ol, ol ol, ol ul {margin:1.5rem 0 1.5rem 3rem; font-size:90%;}
+li {margin-bottom:1rem; }
+
+/* Spacing */
+button, .button {margin-bottom:1rem;}
+input, textarea, select, fieldset {margin-bottom:1.5rem; }
+pre,blockquote,dl,figure,table,p,ul,ol,form {margin-bottom:2.5rem;}
+
+/* Utilities */
+.pull-right {float:right;}
+.pull-left {float:left;}
+.clear {clear:both;}
+
+/* Images */
+.img-cover {width:100%;}
+
+/* Shadow */
+.shadow1 {box-shadow:0 4px 3px 1px #E0DFDF;}
+.shadow2 {box-shadow:-1px 10px 10px -5px #CCCCCC;}
+.shadow3 {box-shadow:-1px 10px 3px 1px #CCCCCC;}
+.shadow4 {border-bottom:2px solid #E0E0E0;}
+
+.inshadow1{box-shadow:0 10px 13px -7px #CCCCCC inset;}
+.inshadow2{box-shadow:0 10px 13px -7px #919191 inset;}
+
+/* Border radius */
+.rad1 {border-radius:$dim1;} 
+.rad2 {border-radius:$dim2;} 
+.rad3 {border-radius:$dim3;}
+
+/* Input */
+.input {width:100%; float:left; clear:both;}
+
+/* Border */
+.no-border {border:none;}
+
+.border-grey {border:1px solid $grey-light;}
+.border-grey-t {border-top:1px solid $grey-light;}
+.border-grey-l {border-left:1px solid  $grey-light;}
+.border-grey-b {border-bottom:1px solid  $grey-light;}
+.border-grey-r {border-right:1px solid $grey-light;}
+
+.border-white {border:1px solid $white-color;}
+.border-white-t {border-top:1px solid $white-color;}
+.border-white-l {border-left:1px solid $white-color;}
+.border-white-b {border-bottom:1px solid $white-color;}
+.border-white-r {border-right:1px solid $white-color;}
+
+.border-primary {border:1px solid $primary-color;}
+.border-primary-t {border-top:1px solid $primary-color;}
+.border-primary-l {border-left:1px solid $primary-color;}
+.border-primary-b {border-bottom:1px solid $primary-color;}
+.border-primary-r {border-right:1px solid $primary-color;}
+
+.border-secondary {border:1px solid $secondary-color;}
+.border-secondary-t {border-top:1px solid $secondary-color;}
+.border-secondary-l {border-left:1px solid $secondary-color;}
+.border-secondary-b {border-bottom:1px solid $secondary-color;}
+.border-secondary-r {border-right:1px solid $secondary-color;}
+
+.border-thirdly {border:1px solid $thirdly-color;}
+.border-thirdly-t {border-top:1px solid $thirdly-color;}
+.border-thirdly-l {border-left:1px solid $thirdly-color;}
+.border-thirdly-b {border-bottom:1px solid $thirdly-color;}
+.border-thirdly-r {border-right:1px solid $thirdly-color;}
+
+.border-fourthly {border:1px solid $fourthly-color;}
+.border-fourthly-t {border-top:1px solid $fourthly-color;}
+.border-fourthly-l {border-left:1px solid $fourthly-color;}
+.border-fourthly-b {border-bottom:1px solid $fourthly-color;}
+.border-fourthly-r {border-right:1px solid $fourthly-color;}
+
+/* Title underbar */
+.bar {background:#EF4857; display:block; height:2px; margin:15px auto; width:80px;}
+
+/* Title underbar */
+.bar-grey {background:#E3E3E3; display:block; height:2px; margin:15px auto; width:80px;}
+.bar-white {background:#FFFFFF; display:block; height:2px; margin:15px auto; width:80px;}
+
+.bar-primary {background:$primary-color; display:block; height:2px; margin:15px auto; width:80px;}
+.bar-secondary {background:$secondary-color; display:block; height:2px; margin:15px auto; width:80px;}
+.bar-thirdly {background:$thirdly-color; display:block; height:2px; margin:15px auto; width:80px;}
+.bar-fourthly {background:$fourthly-color; display:block; height:2px; margin:15px auto; width:80px;}
+
+.block{display:block;} 
+.no-border {border:none;} 
+
+.iframe {width:100%; border:none;}
+
+.o1 {opacity:0.1;} .o2 {opacity:0.2;} .o3 {opacity:0.3;} .o4 {opacity:0.4;} .o5 {opacity:0.5;} .o6 {opacity:0.6;} .o7 {opacity:0.7;} .o8 {opacity:0.8;} .o9 {opacity:0.9;} 
+
+.z2 {z-index:2;} .z3 {z-index:3;} .z4 {z-index:4;} .z5 {z-index:5;} .z6 {z-index:6;} .z7 {z-index:7;} .z8 {z-index:8;} .z9 {z-index:9;} .z10 {z-index:10;} .z999 {z-index:999;} 
+
+/* Positions */ 
+.centre {display:block; margin-left:auto; margin-right:auto; text-align:center;} 
+.posr {position:relative;}
+.posa {position:absolute;}
+.posf {position:fixed;} 
+.top {top:0;} 
+.right {right:0;}
+.bottom {bottom:0;}
+.left {left:0;}
+.clear {clear:both;}
+.overflow {overflow:hidden;}
+.cover {width:100%; height:auto; float:left;}
+
+/* Box model */
+.box{margin:$dim2; padding:$dim2; border:1px solid #E3E3E3;}
 
 /* Margins */
 .m0 {margin:$dim0;}
@@ -165,278 +424,8 @@ small {color:inherit; font-weight:200; font-size:0.8rem;}
 .pxxs {padding:$dim1;}
 .pxs {padding:$dim2;}
 
-.ps {padding-top:$dim3;  padding-bottom:$dim3;}
-.pm {padding-top:$dim4;  padding-bottom:$dim4;}
+.ps {padding-top:$dim3; padding-bottom:$dim3;}
+.pm {padding-top:$dim4; padding-bottom:$dim4;}
 .pl {padding-top:$dim5; padding-bottom:$dim5;}
 .pxl {padding-top:$dim6; padding-bottom:$dim5;}
 
-
-/* Text */
-.primary {color:$primary-color;}
-.secondary {color:$secondary-color;}
-.thirdly {color:$thirdly-color;}
-.fourthly {color:$fourthly-color;}
-/* Background */
-.BGprimary {background:$primary-color;}
-.BGsecondary {background:$secondary-color;}
-.BGthirdly {background:$thirdly-color;}
-.BGfourthly {background:$fourthly-color;}
-/* Whites */
-.white {color:$white-color;} 
-.BGwhite {background:$white-color;}
-/* Off white */
-.offwhite {color:$white-off-color;} 
-.BGoffwhite {background:$white-off-color;}
-/* Greys */
-.lightgrey, .lightgrey a {color:$grey-light;} 
-.BGlightgrey {background:$grey-light;}
-.mediumgrey, mediumgrey a {color:$grey-medium;} 
-.BGmediumgrey {background:$grey-medium;}
-.BGdarkgrey {background:$grey-dark;}
-.darkgrey, .darkgrey a {color:$grey-dark;}
-/* Blacks */
-.black, .black a {color:$black-color;}
-.BGblack {background:$black-color;}
-/* Status colours */
-.warning {color:$warning-color;}
-.safe {color:$safe-color;}
-
-/* Grid
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-/* X SMALL - XS devices */
-@media (min-width:1em) {
-html {font-size:9px;}
-.container {width:100%;}
-.one,.two,.three,.four,.five,.six,.twelve {width:100%; float:left;}
-    
-.xs-one          {width:100%; float:left;}
-.xs-two          {width:50%; float:left;}
-.xs-three        {width:33.3333333333%; float:left;}
-.xs-four         {width:25%; float:left;}
-.xs-five         {width:20%; float:left;}
-.xs-six          {width:16.6666666667%; float:left;}
-.xs-eight        {width:12.5%; float:left;}
-.xs-twelve       {width:8.33333333333%; float:left;}    
-}
-/* SMALL DEVICES - SM - Phablets (landscape phones, 34em and up) */
-@media (min-width:34em) {
-html {font-size:10px;} 
-.container {width:100%;}
-.one          {width:100%; float:left;}
-.two          {width:50%; float:left;}
-.three        {width:33.3333333333%; float:left;}
-.four         {width:25%; float:left;}
-.five         {width:20%; float:left;}
-.six          {width:16.6666666667%; float:left;}
-.eight        {width:12.5%; float:left;}
-.twelve       {width:8.33333333333%; float:left;}    
-}
-
-/* MEDIUM DEVICES - MD (tablets, 48em and up) */
-@media (min-width:48em) {
-html {font-size:13px;} 
-
-.container {width:90%;}
-.one          {width:100%; float:left;}
-.two          {width:50%; float:left;}
-.three        {width:33.3333333333%; float:left;}
-.four         {width:25%; float:left;}
-.five         {width:20%; float:left;}
-.six          {width:16.6666666667%; float:left;}
-.eight        {width:12.5%; float:left;}
-.twelve       {width:8.33333333333%; float:left;}
-}
-/* LARGE DEVICES - LG (desktops, 62em and up) */
-@media (min-width:62em) {
-html {font-size:14px;}
-
-.container {width:90%;}
-.one          {width:100%; float:left;}
-.two          {width:50%; float:left;}
-.three        {width:33.3333333333%; float:left;}
-.four         {width:25%; float:left;}
-.five         {width:20%; float:left;}
-.six          {width:16.6666666667%; float:left;}
-.eight        {width:12.5%; float:left;}
-.twelve       {width:8.33333333333%; float:left;}
-}
-/* EXTRA LARGE DEVICES - LG (large desktops, 75em and up) */
-@media (min-width:75em) {
-html {font-size:15px;} 
-
-.container {width:90%;}
-.one          {width:100%; float:left;}
-.two          {width:50%; float:left;}
-.three        {width:33.3333333333%; float:left;}
-.four         {width:25%; float:left;}
-.five         {width:20%; float:left;}
-.six          {width:16.6666666667%; float:left;}
-.eight        {width:12.5%; float:left;}
-.twelve       {width:8.33333333333%; float:left;}    
-}
-
-.container {position:relative; width:100%; max-width:$container-width; margin:0 auto; padding:0 1rem; box-sizing:border-box; }
-
-/* Base Styles*/
-
-/*
-html is set to 62.5% so that all the REM measurements throughout Skeleton
-are based on 10px sizing. So basically 1.5rem = 15px :) */
-
-/* Buttons */
-.button,button, input[type="submit"],input[type="reset"],input[type="button"] {display:inline-block; height:38px; padding:0 1.0rem; color:#555; text-align:center; font-size:0.7rem; font-weight:600; line-height:38px; letter-spacing:0.1rem; text-transform:uppercase; text-decoration:none; white-space:nowrap; background-color:transparent; border-radius:4px; border:1px solid #bbb; cursor:pointer; box-sizing:border-box; }
-.button:hover,button:hover,input[type="submit"]:hover,input[type="reset"]:hover,input[type="button"]:hover,.button:focus,
-button:focus,input[type="submit"]:focus, input[type="reset"]:focus, input[type="button"]:focus {color:#333; border-color:#888; outline:0; }
-
-.button.button-primary,button.button-primary,input[type="submit"].button-primary,input[type="reset"].button-primary,input[type="button"].button-primary {color:#FFF; background-color:#33C3F0; border-color:#33C3F0; }
-
-.button.button-primary:hover, button.button-primary:hover, input[type="submit"].button-primary:hover, input[type="reset"].button-primary:hover,
-input[type="button"].button-primary:hover,.button.button-primary:focus,
-button.button-primary:focus,input[type="submit"].button-primary:focus,
-input[type="reset"].button-primary:focus,input[type="button"].button-primary:focus {color:#FFF; background-color:#1EAEDB; border-color:#1EAEDB; }
-
-
-/* Forms */
-input[type="email"],input[type="number"],input[type="search"],input[type="text"],input[type="tel"],input[type="url"],input[type="password"],textarea,select {
-height:38px;  padding:6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
-background-color:#fff; border:1px solid #D1D1D1;
-border-radius:4px; box-shadow:none;
-box-sizing:border-box; }
-
-/* Removes awkward default styles on some inputs for iOS */
-input[type="email"],input[type="number"],input[type="search"],input[type="text"],
-input[type="tel"],input[type="url"],input[type="password"],textarea {-webkit-appearance:none; -moz-appearance:none; appearance:none; }
-
-textarea {min-height:65px; padding-top:6px; padding-bottom:6px; }
-input[type="email"]:focus,input[type="number"]:focus,input[type="search"]:focus,input[type="text"]:focus,input[type="tel"]:focus,input[type="url"]:focus,input[type="password"]:focus,textarea:focus,select:focus {border:1px solid #33C3F0; outline:0; }
-label,legend {display:block; margin-bottom:.5rem; font-weight:600; }
-fieldset {padding:0; border-width:0; }
-input[type="checkbox"],input[type="radio"] {display:inline; }
-label > .label-body {display:inline-block; margin-left:.5rem;  font-weight:normal; }
-
-/* Lists */
-.nolist {list-style:none;} 
-ul {list-style:circle inside; }
-ol {list-style:decimal inside; }
-ol, ul {padding-left:0; margin-top:0; }
-ul ul, ul ol, ol ol, ol ul {margin:1.5rem 0 1.5rem 3rem; font-size:90%;}
-li {margin-bottom:1rem; }
-
-/* Spacing */
-button, .button {margin-bottom:1rem;}
-input, textarea, select, fieldset {margin-bottom:1.5rem; }
-pre,blockquote,dl,figure,table,p,ul,ol,form {margin-bottom:2.5rem;}
-
-/* Utilities */
-.pull-right {float:right;}
-.pull-left {float:left;}
-.clear {clear:both;}
-
-
-.container:after, .row:after {content:""; display:table; clear:both; }
-
-
-/* Images */
-.img-cover {width:100%; }
-
-
-/* Shadow */
-.shadow1 {box-shadow:0 4px 3px 1px #E0DFDF;}
-.shadow2 {box-shadow:-1px 10px 10px -5px #CCCCCC;}
-.shadow3 {box-shadow:-1px 10px 3px 1px #CCCCCC;}
-.shadow4 {border-bottom:2px solid #E0E0E0;}
-
-.inshadow1{box-shadow:0 10px 13px -7px #CCCCCC inset;}
-.inshadow2{box-shadow:0 10px 13px -7px #919191 inset;}
-
-/* Border radius */
-.rad1 {border-radius:$dim1;} 
-.rad2 {border-radius:$dim2;} 
-.rad3 {border-radius:$dim3;}
-
-/* Input */
-.input {width:100%; float:left; clear:both;}
-
-/* Border */
-.no-border {border:none;}
-
-.border-grey {border:1px solid $grey-light;}
-.border-grey-t {border-top:1px solid $grey-light;}
-.border-grey-l {border-left:1px solid  $grey-light;}
-.border-grey-b {border-bottom:1px solid  $grey-light;}
-.border-grey-r {border-right:1px solid $grey-light;}
-
-.border-white {border:1px solid $white-color;}
-.border-white-t {border-top:1px solid $white-color;}
-.border-white-l {border-left:1px solid $white-color;}
-.border-white-b {border-bottom:1px solid $white-color;}
-.border-white-r {border-right:1px solid $white-color;}
-
-.border-primary {border:1px solid $primary-color;}
-.border-primary-t {border-top:1px solid $primary-color;}
-.border-primary-l {border-left:1px solid $primary-color;}
-.border-primary-b {border-bottom:1px solid $primary-color;}
-.border-primary-r {border-right:1px solid $primary-color;}
-
-.border-secondary {border:1px solid $secondary-color;}
-.border-secondary-t {border-top:1px solid $secondary-color;}
-.border-secondary-l {border-left:1px solid $secondary-color;}
-.border-secondary-b {border-bottom:1px solid $secondary-color;}
-.border-secondary-r {border-right:1px solid $secondary-color;}
-
-.border-thirdly {border:1px solid $thirdly-color;}
-.border-thirdly-t {border-top:1px solid $thirdly-color;}
-.border-thirdly-l {border-left:1px solid $thirdly-color;}
-.border-thirdly-b {border-bottom:1px solid $thirdly-color;}
-.border-thirdly-r {border-right:1px solid $thirdly-color;}
-
-.border-fourthly {border:1px solid $fourthly-color;}
-.border-fourthly-t {border-top:1px solid $fourthly-color;}
-.border-fourthly-l {border-left:1px solid $fourthly-color;}
-.border-fourthly-b {border-bottom:1px solid $fourthly-color;}
-.border-fourthly-r {border-right:1px solid $fourthly-color;}
-
-/* Title underbar */
-.bar {background:#EF4857; display:block; height:2px; margin:15px auto; width:80px;}
-
-/* Title underbar */
-.bar-grey {background:#E3E3E3; display:block; height:2px; margin:15px auto; width:80px;}
-.bar-white {background:#FFFFFF; display:block; height:2px; margin:15px auto; width:80px;}
-
-.bar-primary {background:$primary-color; display:block; height:2px; margin:15px auto; width:80px;}
-.bar-secondary {background:$secondary-color; display:block; height:2px; margin:15px auto; width:80px;}
-.bar-thirdly {background:$thirdly-color; display:block; height:2px; margin:15px auto; width:80px;}
-.bar-fourthly {background:$fourthly-color; display:block; height:2px; margin:15px auto; width:80px;}
-
-.block{display:block;} 
-.no-border {border:none;} 
-
-
-
-.iframe {width:100%; border:none;}
-
-
-.o1 {opacity:0.1;} .o2 {opacity:0.2;} .o3 {opacity:0.3;} .o4 {opacity:0.4;} .o5 {opacity:0.5;} .o6 {opacity:0.6;} .o7 {opacity:0.7;} .o8 {opacity:0.8;} .o9 {opacity:0.9;} 
-
-.z2 {z-index:2;} .z3 {z-index:3;}
-.z4 {z-index:4;} .z5 {z-index:5;}
-.z6 {z-index:6;} .z7 {z-index:7;}
-.z8 {z-index:8;} .z9 {z-index:9;}
-.z10 {z-index:10;} .z999 {z-index:999;} 
-
-/* Positions */ 
-.centre {display:block; margin-left:auto; margin-right:auto; text-align:center;} 
-.posr {position:relative;}
-.posa {position:absolute;}
-.posf {position:fixed;} 
-.top {top:0;} 
-.right {right:0;}
-.bottom {bottom:0;}
-.left {left:0;}
-.clear {clear:both;}
-.overflow {overflow:hidden;}
-.cover {width:100%; height:auto; float:left;}
-
-/* Box model */
-.box{margin:$dim2; padding:$dim2; border:1px solid #E3E3E3;}
