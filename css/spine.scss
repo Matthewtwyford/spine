@@ -120,96 +120,302 @@ small {color:inherit; font-weight:200; font-size:0.8rem;}
 
 /* Grid ––––––––––––––––––––––––––––––––––––––––––––––– */
 
+.xs1,.xs2,.xs3,.xs4,.xs5,.xs6,.xs7,.xs8,.xs9,.xs10,.xs11,.xs12,
+.s1,.s2,.s3,.s4,.s5,.s6,.s7,.s8,.s9,.s10,.s11,.s12,
+.m1,.m2,.m3,.m4,.m5,.m6,.m7,.m8,.m9,.m10,.m11,.m12,
+.l1,.l2,.l3,.l4,.l5,.l6,.l7,.l8,.l9,.l10,.l11,.l12 {float:left;}
+    
+
 /* X SMALL - XS devices */
 @media (min-width:1em) {
 html {font-size:9px;}
 .container {width:100%;}
+    
+.xs1 {width:8.33333333333%;}
+.xs2 {width:16.6666666666%;}
+.xs3 {width:25%;}
+.xs4 {width:33.3333333333%;}
+.xs5 {width:41.6666666667%;}
+.xs6 {width:50%;}
+.xs7 {width:58.3333333333%;}
+.xs8 {width:66.6666666667%;}
+.xs9 {width:75%;}
+.xs10 {width:83.333333333%;}
+.xs11 {width:91.666666667%;}
+.xs12 {width:100%;}
 
-.xs1 {width:8.33333333333%; float:left;}
-.xs2 {width:16.6666666666%; float:left;}
-.xs3 {width:25%; float:left;}
-.xs4 {width:33.3333333333%; float:left;}
-.xs5 {width:41.6666666667%; float:left;}
-.xs6 {width:50%; float:left;}
-.xs7 {width:58.3333333333%; float:left;}
-.xs8 {width:66.6666666667%; float:left;}
-.xs9 {width:75%; float:left;}
-.xs10 {width:83.333333333%; float:left;}
-.xs11 {width:91.666666667%; float:left;}
-.xs12 {width:100%; float:left;}
+.s1 {width:100%;}
+.s2 {width:100%;}
+.s3 {width:25%;}
+.s4 {width:100%;}
+.s5 {width:100%;}
+.s6 {width:100%;}
+.s7 {width:100%;}
+.s8 {width:100%;}
+.s9 {width:100%;}
+.s10 {width:100%;}
+.s11 {width:100%;}
+.s12 {width:100%;}
 
-.s1 {width:8.33333333333%; float:left;}
-.s2 {width:16.6666666666%; float:left;}
-.s3 {width:25%; float:left;}
-.s4 {width:33.3333333333%; float:left;}
-.s5 {width:41.6666666667%; float:left;}
-.s6 {width:50%; float:left;}
-.s7 {width:58.3333333333%; float:left;}
-.s8 {width:66.6666666667%; float:left;}
-.s9 {width:75%;float:left;}
-.s10 {width:83.333333333%; float:left;}
-.s11 {width:91.666666667%; float:left;}
-.s12 {width:100%; float:left;}
+.m1 {width:100%;}
+.m2 {width:100%;}
+.m3 {width:100%;}
+.m4 {width:100%;}
+.m5 {width:100%;}
+.m6 {width:100%;}
+.m7 {width:100%;}
+.m8 {width:100%;}
+.m9 {width:100%;}
+.m10 {width:100%;}
+.m11 {width:100%;}
+.m12 {width:100%;}
 
-.m1 {width:8.33333333333%; float:left;}
-.m2 {width:16.6666666666%; float:left;}
-.m3 {width:25%; float:left;}
-.m4 {width:33.3333333333%; float:left;}
-.m5 {width:41.6666666667%; float:left;}
-.m6 {width:50%; float:left;}
-.m7 {width:58.3333333333%; float:left;}
-.m8 {width:66.6666666667%; float:left;}
-.m9 {width:75%; float:left;}
-.m10 {width:83.333333333%; float:left;}
-.m11 {width:91.666666667%; float:left;}
-.m12 {width:100%; float:left;}
+.l1 {width:100%;}
+.l2 {width:100%;}
+.l3 {width:100%;}
+.l4 {width:100%;}
+.l5 {width:100%;}
+.l6 {width:100%;}
+.l7 {width:100%;}
+.l8 {width:100%;}
+.l9 {width:100%;}
+.l10 {width:100%;}
+.l11 {width:100%;}
+.l12 {width:100%;}
 
-.l1 {width:8.33333333333%; float:left;}
-.l2 {width:16.6666666666%; float:left;}
-.l3 {width:25%; float:left;}
-.l4 {width:33.3333333333%; float:left;}
-.l5 {width:41.6666666667%; float:left;}
-.l6 {width:50%; float:left;}
-.l7 {width:58.3333333333%; float:left;}
-.l8 {width:66.6666666667%; float:left;}
-.l9 {width:75%; float:left;}
-.l10 {width:83.333333333%; float:left;}
-.l11 {width:91.666666667%; float:left;}
-.l12 {width:100%; float:left;}
-
-.xl1 {width:8.33333333333%; float:left;}
-.xl2 {width:16.6666666666%; float:left;}
-.xl3 {width:25%; float:left;}
-.xl4 {width:33.3333333333%; float:left;}
-.xl5 {width:41.6666666667%; float:left;}
-.xl6 {width:50%; float:left;}
-.xl7 {width:58.3333333333%; float:left;}
-.xl8 {width:66.6666666667%; float:left;}
-.xl9 {width:75%; float:left;}
-.xl10 {width:83.333333333%; float:left;}
-.xl11 {width:91.666666667%; float:left;}
-.xl12 {width:100%; float:left;}    
 
 }
 /* SMALL DEVICES - SM - Phablets (landscape phones, 34em and up) */
 @media (min-width:34em) {
 html {font-size:10px;} 
 .container {width:100%;}
+    
+.s1 {width:8.33333333333%;}
+.s2 {width:16.6666666666%;}
+.s3 {width:25%;}
+.s4 {width:33.3333333333%;}
+.s5 {width:41.6666666667%;}
+.s6 {width:50%;}
+.s7 {width:58.3333333333%;}
+.s8 {width:66.6666666667%;}
+.s9 {width:75%;}
+.s10 {width:83.333333333%;}
+.s11 {width:91.666666667%;}
+.s12 {width:100%; }
+
+.s1 {width:8.33333333333%; }
+.s2 {width:16.6666666666%; }
+.s3 {width:25%; }
+.s4 {width:33.3333333333%; }
+.s5 {width:41.6666666667%; }
+.s6 {width:50%; }
+.s7 {width:58.3333333333%; }
+.s8 {width:66.6666666667%; }
+.s9 {width:75%;}
+.s10 {width:83.333333333%; }
+.s11 {width:91.666666667%; }
+.s12 {width:100%; }
+
+.m1 {width:8.33333333333%; }
+.m2 {width:16.6666666666%; }
+.m3 {width:25%; }
+.m4 {width:33.3333333333%; }
+.m5 {width:41.6666666667%; }
+.m6 {width:50%; }
+.m7 {width:58.3333333333%; }
+.m8 {width:66.6666666667%; }
+.m9 {width:75%; }
+.m10 {width:83.333333333%; }
+.m11 {width:91.666666667%; }
+.m12 {width:100%; }
+
+.l1 {width:8.33333333333%; }
+.l2 {width:16.6666666666%; }
+.l3 {width:25%; }
+.l4 {width:33.3333333333%; }
+.l5 {width:41.6666666667%; }
+.l6 {width:50%; }
+.l7 {width:58.3333333333%; }
+.l8 {width:66.6666666667%; }
+.l9 {width:75%; }
+.l10 {width:83.333333333%; }
+.l11 {width:91.666666667%; }
+.l12 {width:100%; }
+    
 }
 /* MEDIUM DEVICES - MD (tablets, 48em and up) */
 @media (min-width:48em) {
 html {font-size:13px;} 
 .container {width:90%;}
+    
+.s1 {width:8.33333333333%;}
+.s2 {width:16.6666666666%;}
+.s3 {width:25%;}
+.s4 {width:33.3333333333%;}
+.s5 {width:41.6666666667%;}
+.s6 {width:50%;}
+.s7 {width:58.3333333333%;}
+.s8 {width:66.6666666667%;}
+.s9 {width:75%;}
+.s10 {width:83.333333333%;}
+.s11 {width:91.666666667%;}
+.s12 {width:100%; }
+
+.s1 {width:8.33333333333%; }
+.s2 {width:16.6666666666%; }
+.s3 {width:25%; }
+.s4 {width:33.3333333333%; }
+.s5 {width:41.6666666667%; }
+.s6 {width:50%; }
+.s7 {width:58.3333333333%; }
+.s8 {width:66.6666666667%; }
+.s9 {width:75%;}
+.s10 {width:83.333333333%; }
+.s11 {width:91.666666667%; }
+.s12 {width:100%; }
+
+.m1 {width:8.33333333333%; }
+.m2 {width:16.6666666666%; }
+.m3 {width:25%; }
+.m4 {width:33.3333333333%; }
+.m5 {width:41.6666666667%; }
+.m6 {width:50%; }
+.m7 {width:58.3333333333%; }
+.m8 {width:66.6666666667%; }
+.m9 {width:75%; }
+.m10 {width:83.333333333%; }
+.m11 {width:91.666666667%; }
+.m12 {width:100%; }
+
+.l1 {width:8.33333333333%; }
+.l2 {width:16.6666666666%; }
+.l3 {width:25%; }
+.l4 {width:33.3333333333%; }
+.l5 {width:41.6666666667%; }
+.l6 {width:50%; }
+.l7 {width:58.3333333333%; }
+.l8 {width:66.6666666667%; }
+.l9 {width:75%; }
+.l10 {width:83.333333333%; }
+.l11 {width:91.666666667%; }
+.l12 {width:100%; }
+   
 }
 /* LARGE DEVICES - LG (desktops, 62em and up) */
 @media (min-width:62em) {
 html {font-size:14px;}
 .container {width:90%;}
+    
+.s1 {width:8.33333333333%;}
+.s2 {width:16.6666666666%;}
+.s3 {width:25%;}
+.s4 {width:33.3333333333%;}
+.s5 {width:41.6666666667%;}
+.s6 {width:50%;}
+.s7 {width:58.3333333333%;}
+.s8 {width:66.6666666667%;}
+.s9 {width:75%;}
+.s10 {width:83.333333333%;}
+.s11 {width:91.666666667%;}
+.s12 {width:100%; }
+
+.s1 {width:8.33333333333%; }
+.s2 {width:16.6666666666%; }
+.s3 {width:25%; }
+.s4 {width:33.3333333333%; }
+.s5 {width:41.6666666667%; }
+.s6 {width:50%; }
+.s7 {width:58.3333333333%; }
+.s8 {width:66.6666666667%; }
+.s9 {width:75%;}
+.s10 {width:83.333333333%; }
+.s11 {width:91.666666667%; }
+.s12 {width:100%; }
+
+.m1 {width:8.33333333333%; }
+.m2 {width:16.6666666666%; }
+.m3 {width:25%; }
+.m4 {width:33.3333333333%; }
+.m5 {width:41.6666666667%; }
+.m6 {width:50%; }
+.m7 {width:58.3333333333%; }
+.m8 {width:66.6666666667%; }
+.m9 {width:75%; }
+.m10 {width:83.333333333%; }
+.m11 {width:91.666666667%; }
+.m12 {width:100%; }
+
+.l1 {width:8.33333333333%; }
+.l2 {width:16.6666666666%; }
+.l3 {width:25%; }
+.l4 {width:33.3333333333%; }
+.l5 {width:41.6666666667%; }
+.l6 {width:50%; }
+.l7 {width:58.3333333333%; }
+.l8 {width:66.6666666667%; }
+.l9 {width:75%; }
+.l10 {width:83.333333333%; }
+.l11 {width:91.666666667%; }
+.l12 {width:100%; }
+    
 }
 /* EXTRA LARGE DEVICES - LG (large desktops, 75em and up) */
 @media (min-width:75em) {
 html {font-size:15px;} 
 .container {width:90%;}
+
+.s1 {width:8.33333333333%;}
+.s2 {width:16.6666666666%;}
+.s3 {width:25%;}
+.s4 {width:33.3333333333%;}
+.s5 {width:41.6666666667%;}
+.s6 {width:50%;}
+.s7 {width:58.3333333333%;}
+.s8 {width:66.6666666667%;}
+.s9 {width:75%;}
+.s10 {width:83.333333333%;}
+.s11 {width:91.666666667%;}
+.s12 {width:100%; }
+
+.s1 {width:8.33333333333%; }
+.s2 {width:16.6666666666%; }
+.s3 {width:25%; }
+.s4 {width:33.3333333333%; }
+.s5 {width:41.6666666667%; }
+.s6 {width:50%; }
+.s7 {width:58.3333333333%; }
+.s8 {width:66.6666666667%; }
+.s9 {width:75%;}
+.s10 {width:83.333333333%; }
+.s11 {width:91.666666667%; }
+.s12 {width:100%; }
+
+.m1 {width:8.33333333333%; }
+.m2 {width:16.6666666666%; }
+.m3 {width:25%; }
+.m4 {width:33.3333333333%; }
+.m5 {width:41.6666666667%; }
+.m6 {width:50%; }
+.m7 {width:58.3333333333%; }
+.m8 {width:66.6666666667%; }
+.m9 {width:75%; }
+.m10 {width:83.333333333%; }
+.m11 {width:91.666666667%; }
+.m12 {width:100%; }
+
+.l1 {width:8.33333333333%; }
+.l2 {width:16.6666666666%; }
+.l3 {width:25%; }
+.l4 {width:33.3333333333%; }
+.l5 {width:41.6666666667%; }
+.l6 {width:50%; }
+.l7 {width:58.3333333333%; }
+.l8 {width:66.6666666667%; }
+.l9 {width:75%; }
+.l10 {width:83.333333333%; }
+.l11 {width:91.666666667%; }
+.l12 {width:100%; }
+
 }
 
 
