@@ -968,7 +968,7 @@ input, textarea, select, fieldset {
 pre, blockquote, dl, figure, table, ul, ol, form {
   margin-bottom: 1rem; }
 
-/* Utilities */
+/* Left right */
 .pull-right {
   float: right; }
 
