@@ -12,6 +12,8 @@ $font2:Pacifico,sans-serif;
 $font3:Amatic SC,sans-serif;
 $text-color:#333333;
 $text-weight:200;
+$text-weight-light:lighter;
+$text-weight-heavy:bolder;
 $text-height:2.0rem;
 $link-color:#353535;
 $h1:4.0rem;
@@ -65,9 +67,22 @@ $dimwidth12:100%;
 body {margin:0; padding:0; font-family:$font1; color:$text-color; font-weight:$text-weight; line-height:$text-height; }
 
 header {}
-footer {}
+nav {}
+main {}
+aside {}
 article {}
 section {}
+footer {}
+
+/* Show/hide */
+.xs-show{display:block;}
+.xs-hide{display:none;}
+.s-show{display:block;}
+.s-hide{display:none;}
+.m-show{display:block;}
+.m-hide{display:hide;}
+.l-show{display:block;}
+.l-hide{display:none;}
 
 /* Typography */
 h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6 {margin-top:0; margin-bottom:$dim2; font-weight:300; clear:both; width:100%;}
@@ -199,12 +214,11 @@ html {font-size:9px;}
 .l11 {width:$dimwidth12;}
 .l12 {width:$dimwidth12;}
 
-
 }
 /* SMALL DEVICES - SM - Phablets (landscape phones, 34em and up) */
 @media (min-width:34em) {
 html {font-size:10px;} 
-.container {width:100%;}
+.container {width:100%; max-width:$container-width;}
     
 .xs1 {width:$dimwidth1;}
 .xs2 {width:$dimwidth2;}
@@ -262,7 +276,7 @@ html {font-size:10px;}
 /* MEDIUM DEVICES - MD (tablets, 48em and up) */
 @media (min-width:48em) {
 html {font-size:13px;} 
-.container {width:90%;}
+.container {width:100%; max-width:$container-width;}
     
 .xs1 {width:$dimwidth1;}
 .xs2 {width:$dimwidth2;}
@@ -320,7 +334,7 @@ html {font-size:13px;}
 /* LARGE DEVICES - LG (desktops, 62em and up) */
 @media (min-width:62em) {
 html {font-size:14px;}
-.container {width:90%;}
+.container {width:100%; max-width:$container-width;}
     
     
 .xs1 {width:$dimwidth1;}
@@ -384,7 +398,7 @@ html {font-size:15px;}
 }
 */
 
-.container {position:relative; width:100%; max-width:$container-width; margin:0 auto; padding:0 1rem; box-sizing:border-box; clear:both;}
+.container {position:relative; margin:0 auto; padding:0 1rem; box-sizing:border-box; clear:both;}
 .container:after, .row:after {content:""; display:table; clear:both; }
 
 /* Buttons */
@@ -520,7 +534,7 @@ pre,blockquote,dl,figure,table,ul,ol,form {margin-bottom:$dim2;}
 .z2 {z-index:2;} .z3 {z-index:3;} .z4 {z-index:4;} .z5 {z-index:5;} .z6 {z-index:6;} .z7 {z-index:7;} .z8 {z-index:8;} .z9 {z-index:9;} .z10 {z-index:10;} .ztop {z-index:999;} 
 
 /* Positions */ 
-.centre {display:block; margin-left:auto; margin-right:auto; text-align:center;} 
+.center {display:block; margin-left:auto; margin-right:auto; text-align:center;} 
 .posr {position:relative;}
 .posa {position:absolute;}
 .posf {position:fixed;} 

@@ -17,6 +17,31 @@ body {
   font-weight: 200;
   line-height: 2rem; }
 
+/* Show/hide */
+.xs-show {
+  display: block; }
+
+.xs-hide {
+  display: none; }
+
+.s-show {
+  display: block; }
+
+.s-hide {
+  display: none; }
+
+.m-show {
+  display: block; }
+
+.m-hide {
+  display: hide; }
+
+.l-show {
+  display: block; }
+
+.l-hide {
+  display: none; }
+
 /* Typography */
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin-top: 0;
@@ -359,7 +384,8 @@ small {
     font-size: 10px; }
 
   .container {
-    width: 100%; }
+    width: 100%;
+    max-width: 80%; }
 
   .xs1 {
     width: 8.33333%; }
@@ -510,7 +536,8 @@ small {
     font-size: 13px; }
 
   .container {
-    width: 90%; }
+    width: 100%;
+    max-width: 80%; }
 
   .xs1 {
     width: 8.33333%; }
@@ -661,7 +688,8 @@ small {
     font-size: 14px; }
 
   .container {
-    width: 90%; }
+    width: 100%;
+    max-width: 80%; }
 
   .xs1 {
     width: 8.33333%; }
@@ -815,8 +843,6 @@ html {font-size:15px;}
 */
 .container {
   position: relative;
-  width: 100%;
-  max-width: 80%;
   margin: 0 auto;
   padding: 0 1rem;
   box-sizing: border-box;
@@ -1203,7 +1229,7 @@ pre, blockquote, dl, figure, table, ul, ol, form {
   z-index: 999; }
 
 /* Positions */
-.centre {
+.center {
   display: block;
   margin-left: auto;
   margin-right: auto;
