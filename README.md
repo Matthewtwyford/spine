@@ -36,3 +36,11 @@ Column. Units upto 12 columns layout.
 <li>Add code coding - Working on </li>
 <li>Add favicon - Working on</li>
 </ul>
+
+<h2>Acknowledgements</h2>
+<ul>
+    <li><a href='http://fontawesome.io'>Font Awesome</a></li>
+    <li>Skelton</li>
+    <li>Unsplash</li>
+    <li>Death to Stock</li>
+</ul>
