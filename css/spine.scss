@@ -4,6 +4,8 @@
 #URL: https://github.com/wilco5nine
 */
 
+/* ------ S: VARS ------ */
+
 /* Font */
 $font1:Raleway,sans-serif;
 $font2:Pacifico,sans-serif;
@@ -18,7 +20,6 @@ $h3:3.0rem;
 $h4:2.4rem;
 $h5:1.8rem;
 $h6:1.5rem;
-
 
 /* Colours */
 $primary-color:#EF4857;
@@ -35,8 +36,7 @@ $grey-medium:#ECECEC;
 $grey-dark:#9A9A9A;
 
 /* Dimensions */
-$container-width:70%;
-
+$container-width:80%;
 $dim0:0;
 $dim1:0.5rem;
 $dim2:1.0rem;
@@ -60,12 +60,14 @@ $dimwidth10:83.333333333%;
 $dimwidth11:91.666666667%;;
 $dimwidth12:100%;    
 
+/* ------ E: VARS ------ */
 
 body {margin:0; padding:0; font-family:$font1; color:$text-color; font-weight:$text-weight; line-height:$text-height; }
-/* Header */
+
 header {}
-/* Footer */
 footer {}
+article {}
+section {}
 
 /* Typography */
 h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6 {margin-top:0; margin-bottom:$dim2; font-weight:300; clear:both; width:100%;}
@@ -429,8 +431,8 @@ li {margin-bottom:1rem; }
 
 /* Spacing */
 button, .button {margin-bottom:1rem;}
-input, textarea, select, fieldset {margin-bottom:1.5rem; }
-pre,blockquote,dl,figure,table,p,ul,ol,form {margin-bottom:2.5rem;}
+input, textarea, select, fieldset {margin-bottom:$dim2; }
+pre,blockquote,dl,figure,table,ul,ol,form {margin-bottom:$dim2;}
 
 /* Utilities */
 .pull-right {float:right;}
@@ -515,7 +517,7 @@ pre,blockquote,dl,figure,table,p,ul,ol,form {margin-bottom:2.5rem;}
 
 .o1 {opacity:0.1;} .o2 {opacity:0.2;} .o3 {opacity:0.3;} .o4 {opacity:0.4;} .o5 {opacity:0.5;} .o6 {opacity:0.6;} .o7 {opacity:0.7;} .o8 {opacity:0.8;} .o9 {opacity:0.9;} 
 
-.z2 {z-index:2;} .z3 {z-index:3;} .z4 {z-index:4;} .z5 {z-index:5;} .z6 {z-index:6;} .z7 {z-index:7;} .z8 {z-index:8;} .z9 {z-index:9;} .z10 {z-index:10;} .z999 {z-index:999;} 
+.z2 {z-index:2;} .z3 {z-index:3;} .z4 {z-index:4;} .z5 {z-index:5;} .z6 {z-index:6;} .z7 {z-index:7;} .z8 {z-index:8;} .z9 {z-index:9;} .z10 {z-index:10;} .ztop {z-index:999;} 
 
 /* Positions */ 
 .centre {display:block; margin-left:auto; margin-right:auto; text-align:center;} 
@@ -531,7 +533,7 @@ pre,blockquote,dl,figure,table,p,ul,ol,form {margin-bottom:2.5rem;}
 .cover {width:100%; height:auto; float:left;}
 
 /* Box model */
-.box{margin:$dim2; padding:$dim2; border:1px solid #E3E3E3;}
+.box{margin:$dim2; padding:$dim2; border:1px solid $grey-light;}
 
 /* Margins */
 .m0 {margin:$dim0;}

@@ -4,9 +4,11 @@
 #Creator: Matthew Twyford 
 #URL: https://github.com/wilco5nine
 */
+/* ------ S: VARS ------ */
 /* Font */
 /* Colours */
 /* Dimensions */
+/* ------ E: VARS ------ */
 body {
   margin: 0;
   padding: 0;
@@ -15,8 +17,6 @@ body {
   font-weight: 200;
   line-height: 2rem; }
 
-/* Header */
-/* Footer */
 /* Typography */
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin-top: 0;
@@ -816,7 +816,7 @@ html {font-size:15px;}
 .container {
   position: relative;
   width: 100%;
-  max-width: 70%;
+  max-width: 80%;
   margin: 0 auto;
   padding: 0 1rem;
   box-sizing: border-box;
@@ -936,10 +936,10 @@ button, .button {
   margin-bottom: 1rem; }
 
 input, textarea, select, fieldset {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1rem; }
 
-pre, blockquote, dl, figure, table, p, ul, ol, form {
-  margin-bottom: 2.5rem; }
+pre, blockquote, dl, figure, table, ul, ol, form {
+  margin-bottom: 1rem; }
 
 /* Utilities */
 .pull-right {
@@ -1199,7 +1199,7 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
 .z10 {
   z-index: 10; }
 
-.z999 {
+.ztop {
   z-index: 999; }
 
 /* Positions */
@@ -1245,7 +1245,7 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
 .box {
   margin: 1rem;
   padding: 1rem;
-  border: 1px solid #E3E3E3; }
+  border: 1px solid #EEEEEE; }
 
 /* Margins */
 .m0 {

@@ -30,6 +30,7 @@ Column. Units upto 12 columns layout.
 <h2>Todo</h2>
 <ul>
 <li>Remove all Px units - Working on</li>
+<li>Add html5 elements</li>
 <li>Finish and test media queries - Working on</li>
 <li>Button stlying - inverse - Working on </li>
 <li>Add code coding - Working</li>
