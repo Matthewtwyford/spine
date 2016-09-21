@@ -35,6 +35,7 @@ Column. Units upto 12 columns layout.
 <li>Button stlying - inverse - Working on </li>
 <li>Add code coding - Working on </li>
 <li>Add favicon - Working on</li>
+<li>Make Standard CSS verion - Working on</li>
 </ul>
 
 <h2>Acknowledgements</h2>
