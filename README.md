@@ -36,6 +36,7 @@ Column. Units upto 12 columns layout.
 <li>Add code coding - Working on </li>
 <li>Add favicon - Working on</li>
 <li>Make Standard CSS verion - Working on</li>
+<li>Side project Jquery custom snippets - Working on</li>
 </ul>
 
 <h2>Acknowledgements</h2>
