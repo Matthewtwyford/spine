@@ -6,6 +6,12 @@
 
 /* ------ S: VARS ------ */
 
+
+$breakpoint-xs:;
+$breakpoint-s:;
+$breakpoint-m:;
+$breakpoint-l:;
+
 /* Font */
 $font1:Raleway,sans-serif;
 $font2:Pacifico,sans-serif;
@@ -13,7 +19,7 @@ $font3:Amatic SC,sans-serif;
 $text-color:#333333;
 $text-weight:200;
 $text-weight-light:lighter;
-$text-weight-heavy:bolder;
+$text-weight-bold:bolder;
 $text-height:2.0rem;
 $link-color:#353535;
 $h1:4.0rem;
@@ -104,7 +110,7 @@ h6,.h6 {font-size:$h6; line-height:100%; letter-spacing:0;}
 
 hr {margin-top:$dim1; margin-bottom:$dim2; border-width:0; border-top:1px solid $grey-light;}
 p {font-size:1.0rem; line-height:$text-height;}
-a {color:$link-color;}
+a {color:$link-color; font-weight:$text-weight-bold;}
 a:hover, a:active , a:focus {text-decoration:none; color:inherit;}
 
 italic, .italic {font-style:italic;}
@@ -454,7 +460,7 @@ pre,blockquote,dl,figure,table,ul,ol,form {margin-bottom:$dim2;}
 .clear {clear:both;}
 
 /* Images */
-.img-cover {width:100%;}
+.img-cover {width:100%; display:block;}
 
 /* Shadow */
 .shadow1 {box-shadow:0 4px 3px 1px #E0DFDF;}
@@ -513,11 +519,9 @@ pre,blockquote,dl,figure,table,ul,ol,form {margin-bottom:$dim2;}
 .border-fourthly-r {border-right:1px solid $fourthly-color;}
 
 /* Title underbar */
-.bar {background:#EF4857; display:block; height:2px; margin:15px auto; width:80px;}
 
-/* Title underbar */
-.bar-grey {background:#E3E3E3; display:block; height:2px; margin:15px auto; width:80px;}
-.bar-white {background:#FFFFFF; display:block; height:2px; margin:15px auto; width:80px;}
+.bar-grey {background:$grey-dark; display:block; height:2px; margin:15px auto; width:80px;}
+.bar-white {background:$white; display:block; height:2px; margin:15px auto; width:80px;}
 
 .bar-primary {background:$primary-color; display:block; height:2px; margin:15px auto; width:80px;}
 .bar-secondary {background:$secondary-color; display:block; height:2px; margin:15px auto; width:80px;}
