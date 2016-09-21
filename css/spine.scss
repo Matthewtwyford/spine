@@ -7,10 +7,10 @@
 /* ------ S: VARS ------ */
 
 
-$breakpoint-xs:1;
-$breakpoint-s:2;
-$breakpoint-m:3;
-$breakpoint-l:4;
+$breakpoint-xs:1em;
+$breakpoint-s:34em;
+$breakpoint-m:48em;
+$breakpoint-l:62em;
 
 /* Font */
 $font1:Raleway,sans-serif;
@@ -154,33 +154,36 @@ small {color:inherit; font-weight:200; font-size:0.8rem;}
 .warning {color:$warning-color;}
 .safe {color:$safe-color;}
 
-/* Grid ––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ------ Grid structure ------ */
 
 .xs1,.xs2,.xs3,.xs4,.xs5,.xs6,.xs7,.xs8,.xs9,.xs10,.xs11,.xs12,
 .s1,.s2,.s3,.s4,.s5,.s6,.s7,.s8,.s9,.s10,.s11,.s12,
 .m1,.m2,.m3,.m4,.m5,.m6,.m7,.m8,.m9,.m10,.m11,.m12,
-.l1,.l2,.l3,.l4,.l5,.l6,.l7,.l8,.l9,.l10,.l11,.l12 {float:left;}
+.l1,.l2,.l3,.l4,.l5,.l6,.l7,.l8,.l9,.l10,.l11,.l12 {
+float:left;
+min-height:1px;
+position:relative;
+}
     
-
 /* X SMALL - XS devices */
-@media (min-width:1em) {
+@media (min-width:$breakpoint-xs) {
 html {font-size:9px;}
 .container {width:100%;}
 
+.xs1 {width:$dimwidth1!important;}
+.xs2 {width:$dimwidth2!important;}
+.xs3 {width:$dimwidth3!important;}
+.xs4 {width:$dimwidth4!important;}
+.xs5 {width:$dimwidth5!important;}
+.xs6 {width:$dimwidth6!important;}
+.xs7 {width:$dimwidth7!important;}
+.xs8 {width:$dimwidth8!important;}
+.xs9 {width:$dimwidth9!important;}
+.xs10 {width:$dimwidth10!important;}
+.xs11 {width:$dimwidth11!important;}
+.xs12 {width:$dimwidth12!important;}
 
-.xs1 {width:$dimwidth1;}
-.xs2 {width:$dimwidth2;}
-.xs3 {width:$dimwidth3;}
-.xs4 {width:$dimwidth4;}
-.xs5 {width:$dimwidth5;}
-.xs6 {width:$dimwidth6;}
-.xs7 {width:$dimwidth7;}
-.xs8 {width:$dimwidth8;}
-.xs9 {width:$dimwidth9;}
-.xs10 {width:$dimwidth10;}
-.xs11 {width:$dimwidth11;}
-.xs12 {width:$dimwidth12;}
-
+/*
 .s1 {width:$dimwidth12;}
 .s2 {width:$dimwidth12;}
 .s3 {width:$dimwidth12;}
@@ -193,7 +196,6 @@ html {font-size:9px;}
 .s10 {width:$dimwidth12;}
 .s11 {width:$dimwidth12;}
 .s12 {width:$dimwidth12;}
-
 .m1 {width:$dimwidth12;}
 .m2 {width:$dimwidth12;}
 .m3 {width:$dimwidth12;}
@@ -206,7 +208,6 @@ html {font-size:9px;}
 .m10 {width:$dimwidth12;}
 .m11 {width:$dimwidth12;}
 .m12 {width:$dimwidth12;}
-
 .l1 {width:$dimwidth12;}
 .l2 {width:$dimwidth12;}
 .l3 {width:$dimwidth12;}
@@ -219,190 +220,184 @@ html {font-size:9px;}
 .l10 {width:$dimwidth12;}
 .l11 {width:$dimwidth12;}
 .l12 {width:$dimwidth12;}
-
+*/
+    
 }
+
 /* SMALL DEVICES - SM - Phablets (landscape phones, 34em and up) */
-@media (min-width:34em) {
+@media (min-width:$breakpoint-s) {
 html {font-size:10px;} 
 .container {width:100%; max-width:$container-width;}
     
-.xs1 {width:$dimwidth1;}
-.xs2 {width:$dimwidth2;}
-.xs3 {width:$dimwidth3;}
-.xs4 {width:$dimwidth4;}
-.xs5 {width:$dimwidth5;}
-.xs6 {width:$dimwidth6;}
-.xs7 {width:$dimwidth7;}
-.xs8 {width:$dimwidth8;}
-.xs9 {width:$dimwidth9;}
-.xs10 {width:$dimwidth10;}
-.xs11 {width:$dimwidth11;}
-.xs12 {width:$dimwidth12;}
+.xs1 {width:$dimwidth1!important;}
+.xs2 {width:$dimwidth2!important;}
+.xs3 {width:$dimwidth3!important;}
+.xs4 {width:$dimwidth4!important;}
+.xs5 {width:$dimwidth5!important;}
+.xs6 {width:$dimwidth6!important;}
+.xs7 {width:$dimwidth7!important;}
+.xs8 {width:$dimwidth8!important;}
+.xs9 {width:$dimwidth9!important;}
+.xs10 {width:$dimwidth10!important;}
+.xs11 {width:$dimwidth11!important;}
+.xs12 {width:$dimwidth12!important;}
     
-.s1 {width:$dimwidth1;}
-.s2 {width:$dimwidth2;}
-.s3 {width:$dimwidth3;}
-.s4 {width:$dimwidth4;}
-.s5 {width:$dimwidth5;}
-.s6 {width:$dimwidth6;}
-.s7 {width:$dimwidth7;}
-.s8 {width:$dimwidth8;}
-.s9 {width:$dimwidth9;}
-.s10 {width:$dimwidth10;}
-.s11 {width:$dimwidth11;}
-.s12 {width:$dimwidth12;}
+.s1 {width:$dimwidth1!important;}
+.s2 {width:$dimwidth2!important;}
+.s3 {width:$dimwidth3!important;}
+.s4 {width:$dimwidth4!important;}
+.s5 {width:$dimwidth5!important;}
+.s6 {width:$dimwidth6!important;}
+.s7 {width:$dimwidth7!important;}
+.s8 {width:$dimwidth8!important;}
+.s9 {width:$dimwidth9!important;}
+.s10 {width:$dimwidth10!important;}
+.s11 {width:$dimwidth11!important;}
+.s12 {width:$dimwidth12!important;}
 
-.m1 {width:$dimwidth1;}
-.m2 {width:$dimwidth2;}
-.m3 {width:$dimwidth3;}
-.m4 {width:$dimwidth4;}
-.m5 {width:$dimwidth5;}
-.m6 {width:$dimwidth6;}
-.m7 {width:$dimwidth7;}
-.m8 {width:$dimwidth8;}
-.m9 {width:$dimwidth9;}
-.m10 {width:$dimwidth10;}
-.m11 {width:$dimwidth11;}
-.m12 {width:$dimwidth12;}
+.m1 {width:$dimwidth1!important;}
+.m2 {width:$dimwidth2!important;}
+.m3 {width:$dimwidth3!important;}
+.m4 {width:$dimwidth4!important;}
+.m5 {width:$dimwidth5!important;}
+.m6 {width:$dimwidth6!important;}
+.m7 {width:$dimwidth7!important;}
+.m8 {width:$dimwidth8!important;}
+.m9 {width:$dimwidth9!important;}
+.m10 {width:$dimwidth10!important;}
+.m11 {width:$dimwidth11!important;}
+.m12 {width:$dimwidth12!important;}
 
-.l1 {width:$dimwidth1;}
-.l2 {width:$dimwidth2;}
-.l3 {width:$dimwidth3;}
-.l4 {width:$dimwidth4;}
-.l5 {width:$dimwidth5;}
-.l6 {width:$dimwidth6;}
-.l7 {width:$dimwidth7;}
-.l8 {width:$dimwidth8;}
-.l9 {width:$dimwidth9;}
-.l10 {width:$dimwidth10;}
-.l11 {width:$dimwidth11;}
-.l12 {width:$dimwidth12;}
+.l1 {width:$dimwidth1!important;}
+.l2 {width:$dimwidth2!important;}
+.l3 {width:$dimwidth3!important;}
+.l4 {width:$dimwidth4!important;}
+.l5 {width:$dimwidth5!important;}
+.l6 {width:$dimwidth6!important;}
+.l7 {width:$dimwidth7!important;}
+.l8 {width:$dimwidth8!important;}
+.l9 {width:$dimwidth9!important;}
+.l10 {width:$dimwidth10!important;}
+.l11 {width:$dimwidth11!important;}
+.l12 {width:$dimwidth12!important;}
     
 }
 /* MEDIUM DEVICES - MD (tablets, 48em and up) */
-@media (min-width:48em) {
+@media (min-width:$breakpoint-m) {
 html {font-size:13px;} 
 .container {width:100%; max-width:$container-width;}
     
-.xs1 {width:$dimwidth1;}
-.xs2 {width:$dimwidth2;}
-.xs3 {width:$dimwidth3;}
-.xs4 {width:$dimwidth4;}
-.xs5 {width:$dimwidth5;}
-.xs6 {width:$dimwidth6;}
-.xs7 {width:$dimwidth7;}
-.xs8 {width:$dimwidth8;}
-.xs9 {width:$dimwidth9;}
-.xs10 {width:$dimwidth10;}
-.xs11 {width:$dimwidth11;}
-.xs12 {width:$dimwidth12;}
+.xs1 {width:$dimwidth1!important;}
+.xs2 {width:$dimwidth2!important;}
+.xs3 {width:$dimwidth3!important;}
+.xs4 {width:$dimwidth4!important;}
+.xs5 {width:$dimwidth5!important;}
+.xs6 {width:$dimwidth6!important;}
+.xs7 {width:$dimwidth7!important;}
+.xs8 {width:$dimwidth8!important;}
+.xs9 {width:$dimwidth9!important;}
+.xs10 {width:$dimwidth10!important;}
+.xs11 {width:$dimwidth11!important;}
+.xs12 {width:$dimwidth12!important;}
     
-.s1 {width:$dimwidth1;}
-.s2 {width:$dimwidth2;}
-.s3 {width:$dimwidth3;}
-.s4 {width:$dimwidth4;}
-.s5 {width:$dimwidth5;}
-.s6 {width:$dimwidth6;}
-.s7 {width:$dimwidth7;}
-.s8 {width:$dimwidth8;}
-.s9 {width:$dimwidth9;}
-.s10 {width:$dimwidth10;}
-.s11 {width:$dimwidth11;}
-.s12 {width:$dimwidth12;}
+.s1 {width:$dimwidth1!important;}
+.s2 {width:$dimwidth2!important;}
+.s3 {width:$dimwidth3!important;}
+.s4 {width:$dimwidth4!important;}
+.s5 {width:$dimwidth5!important;}
+.s6 {width:$dimwidth6!important;}
+.s7 {width:$dimwidth7!important;}
+.s8 {width:$dimwidth8!important;}
+.s9 {width:$dimwidth9!important;}
+.s10 {width:$dimwidth10!important;}
+.s11 {width:$dimwidth11!important;}
+.s12 {width:$dimwidth12!important;}
 
-.m1 {width:$dimwidth1;}
-.m2 {width:$dimwidth2;}
-.m3 {width:$dimwidth3;}
-.m4 {width:$dimwidth4;}
-.m5 {width:$dimwidth5;}
-.m6 {width:$dimwidth6;}
-.m7 {width:$dimwidth7;}
-.m8 {width:$dimwidth8;}
-.m9 {width:$dimwidth9;}
-.m10 {width:$dimwidth10;}
-.m11 {width:$dimwidth11;}
-.m12 {width:$dimwidth12;}
+.m1 {width:$dimwidth1!important;}
+.m2 {width:$dimwidth2!important;}
+.m3 {width:$dimwidth3!important;}
+.m4 {width:$dimwidth4!important;}
+.m5 {width:$dimwidth5!important;}
+.m6 {width:$dimwidth6!important;}
+.m7 {width:$dimwidth7!important;}
+.m8 {width:$dimwidth8!important;}
+.m9 {width:$dimwidth9!important;}
+.m10 {width:$dimwidth10!important;}
+.m11 {width:$dimwidth11!important;}
+.m12 {width:$dimwidth12!important;}
 
-.l1 {width:$dimwidth1;}
-.l2 {width:$dimwidth2;}
-.l3 {width:$dimwidth3;}
-.l4 {width:$dimwidth4;}
-.l5 {width:$dimwidth5;}
-.l6 {width:$dimwidth6;}
-.l7 {width:$dimwidth7;}
-.l8 {width:$dimwidth8;}
-.l9 {width:$dimwidth9;}
-.l10 {width:$dimwidth10;}
-.l11 {width:$dimwidth11;}
-.l12 {width:$dimwidth12;}
+.l1 {width:$dimwidth1!important;}
+.l2 {width:$dimwidth2!important;}
+.l3 {width:$dimwidth3!important;}
+.l4 {width:$dimwidth4!important;}
+.l5 {width:$dimwidth5!important;}
+.l6 {width:$dimwidth6!important;}
+.l7 {width:$dimwidth7!important;}
+.l8 {width:$dimwidth8!important;}
+.l9 {width:$dimwidth9!important;}
+.l10 {width:$dimwidth10!important;}
+.l11 {width:$dimwidth11!important;}
+.l12 {width:$dimwidth12!important;}
    
 }
 /* LARGE DEVICES - LG (desktops, 62em and up) */
-@media (min-width:62em) {
+@media (min-width:$breakpoint-l) {
 html {font-size:14px;}
 .container {width:100%; max-width:$container-width;}
     
+.xs1 {width:$dimwidth1!important;}
+.xs2 {width:$dimwidth2!important;}
+.xs3 {width:$dimwidth3!important;}
+.xs4 {width:$dimwidth4!important;}
+.xs5 {width:$dimwidth5!important;}
+.xs6 {width:$dimwidth6!important;}
+.xs7 {width:$dimwidth7!important;}
+.xs8 {width:$dimwidth8!important;}
+.xs9 {width:$dimwidth9!important;}
+.xs10 {width:$dimwidth10!important;}
+.xs11 {width:$dimwidth11!important;}
+.xs12 {width:$dimwidth12!important;}
     
-.xs1 {width:$dimwidth1;}
-.xs2 {width:$dimwidth2;}
-.xs3 {width:$dimwidth3;}
-.xs4 {width:$dimwidth4;}
-.xs5 {width:$dimwidth5;}
-.xs6 {width:$dimwidth6;}
-.xs7 {width:$dimwidth7;}
-.xs8 {width:$dimwidth8;}
-.xs9 {width:$dimwidth9;}
-.xs10 {width:$dimwidth10;}
-.xs11 {width:$dimwidth11;}
-.xs12 {width:$dimwidth12;}
-    
-.s1 {width:$dimwidth1;}
-.s2 {width:$dimwidth2;}
-.s3 {width:$dimwidth3;}
-.s4 {width:$dimwidth4;}
-.s5 {width:$dimwidth5;}
-.s6 {width:$dimwidth6;}
-.s7 {width:$dimwidth7;}
-.s8 {width:$dimwidth8;}
-.s9 {width:$dimwidth9;}
-.s10 {width:$dimwidth10;}
-.s11 {width:$dimwidth11;}
-.s12 {width:$dimwidth12;}
+.s1 {width:$dimwidth1!important;}
+.s2 {width:$dimwidth2!important;}
+.s3 {width:$dimwidth3!important;}
+.s4 {width:$dimwidth4!important;}
+.s5 {width:$dimwidth5!important;}
+.s6 {width:$dimwidth6!important;}
+.s7 {width:$dimwidth7!important;}
+.s8 {width:$dimwidth8!important;}
+.s9 {width:$dimwidth9!important;}
+.s10 {width:$dimwidth10!important;}
+.s11 {width:$dimwidth11!important;}
+.s12 {width:$dimwidth12!important;}
 
-.m1 {width:$dimwidth1;}
-.m2 {width:$dimwidth2;}
-.m3 {width:$dimwidth3;}
-.m4 {width:$dimwidth4;}
-.m5 {width:$dimwidth5;}
-.m6 {width:$dimwidth6;}
-.m7 {width:$dimwidth7;}
-.m8 {width:$dimwidth8;}
-.m9 {width:$dimwidth9;}
-.m10 {width:$dimwidth10;}
-.m11 {width:$dimwidth11;}
-.m12 {width:$dimwidth12;}
+.m1 {width:$dimwidth1!important;}
+.m2 {width:$dimwidth2!important;}
+.m3 {width:$dimwidth3!important;}
+.m4 {width:$dimwidth4!important;}
+.m5 {width:$dimwidth5!important;}
+.m6 {width:$dimwidth6!important;}
+.m7 {width:$dimwidth7!important;}
+.m8 {width:$dimwidth8!important;}
+.m9 {width:$dimwidth9!important;}
+.m10 {width:$dimwidth10!important;}
+.m11 {width:$dimwidth11!important;}
+.m12 {width:$dimwidth12!important;}
 
-.l1 {width:$dimwidth1;}
-.l2 {width:$dimwidth2;}
-.l3 {width:$dimwidth3;}
-.l4 {width:$dimwidth4;}
-.l5 {width:$dimwidth5;}
-.l6 {width:$dimwidth6;}
-.l7 {width:$dimwidth7;}
-.l8 {width:$dimwidth8;}
-.l9 {width:$dimwidth9;}
-.l10 {width:$dimwidth10;}
-.l11 {width:$dimwidth11;}
-.l12 {width:$dimwidth12;}
+.l1 {width:$dimwidth1!important;}
+.l2 {width:$dimwidth2!important;}
+.l3 {width:$dimwidth3!important;}
+.l4 {width:$dimwidth4!important;}
+.l5 {width:$dimwidth5!important;}
+.l6 {width:$dimwidth6!important;}
+.l7 {width:$dimwidth7!important;}
+.l8 {width:$dimwidth8!important;}
+.l9 {width:$dimwidth9!important;}
+.l10 {width:$dimwidth10!important;}
+.l11 {width:$dimwidth11!important;}
+.l12 {width:$dimwidth12!important;}
     
 }
-/* EXTRA LARGE DEVICES - LG (large desktops, 75em and up) 
-@media (min-width:75em) {
-html {font-size:15px;} 
-.container {width:90%;}
-
-}
-*/
 
 .container {position:relative; margin:0 auto; padding:0 1rem; box-sizing:border-box; clear:both;}
 .container:after, .row:after {content:""; display:table; clear:both; }
@@ -411,6 +406,7 @@ html {font-size:15px;}
 .button,button, input[type="submit"],input[type="reset"],input[type="button"] 
 {display:inline-block; height:38px; padding:$dim0 $dim1; color:$grey-dark; text-align:center; font-size:0.7rem; font-weight:600; line-height:38px; letter-spacing:0.1rem; text-transform:uppercase; text-decoration:none; white-space:nowrap; background-color:transparent; border-radius:4px; border:1px solid $grey-dark; cursor:pointer; box-sizing:border-box; }
 
+/* Button hover */
 .button:hover,button:hover,input[type="submit"]:hover,input[type="reset"]:hover,input[type="button"]:hover,.button:focus,
 button:focus,input[type="submit"]:focus, input[type="reset"]:focus, input[type="button"]:focus 
 {color:$grey-dark; border-color:$grey-medium; outline:0; }
@@ -426,16 +422,21 @@ input[type="reset"].button-primary:focus,input[type="button"].button-primary:foc
 /* Forms */
 input[type="email"],input[type="number"],input[type="search"],input[type="text"],input[type="tel"],input[type="url"],input[type="password"],textarea,select {
 height:38px;  padding:6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
-background-color:#fff; border:1px solid #D1D1D1;
-border-radius:4px; box-shadow:none;
-box-sizing:border-box; }
+background-color:#fff; 
+border:1px solid #D1D1D1;
+border-radius:4px;
+box-shadow:none;
+box-sizing:border-box;
+width:90%;
+margin:inherit 5% inherit 5%;
+}
 
 /* Removes awkward default styles on some inputs for iOS */
 input[type="email"],input[type="number"],input[type="search"],input[type="text"],
 input[type="tel"],input[type="url"],input[type="password"],textarea {-webkit-appearance:none; -moz-appearance:none; appearance:none; }
 
-textarea {min-height:65px; padding-top:6px; padding-bottom:6px; }
-input[type="email"]:focus,input[type="number"]:focus,input[type="search"]:focus,input[type="text"]:focus,input[type="tel"]:focus,input[type="url"]:focus,input[type="password"]:focus,textarea:focus,select:focus {border:1px solid #33C3F0; outline:0; }
+textarea {min-height:65px; padding-top:$dim1; padding-bottom:$dim1; }
+input[type="email"]:focus,input[type="number"]:focus,input[type="search"]:focus,input[type="text"]:focus,input[type="tel"]:focus,input[type="url"]:focus,input[type="password"]:focus,textarea:focus,select:focus {border:1px solid $secondary-color; outline:0; }
 label,legend {display:block; margin-bottom:.5rem; font-weight:600; }
 fieldset {padding:0; border-width:0; }
 input[type="checkbox"],input[type="radio"] {display:inline; }
