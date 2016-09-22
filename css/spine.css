@@ -107,7 +107,7 @@ hr {
   border-top: 1px solid #EEEEEE; }
 
 p {
-  font-size: 1.0rem;
+  font-size: 1rem;
   line-height: 2rem; }
 
 a {
@@ -815,22 +815,22 @@ button:focus, input[type="submit"]:focus, input[type="reset"]:focus, input[type=
 input[type="button"].button-primary:hover, .button.button-primary:focus,
 button.button-primary:focus, input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus, input[type="button"].button-primary:focus {
-  color: #FFF;
+  color: #FFFFFF;
   background-color: #1EAEDB;
   border-color: #1EAEDB; }
 
 /* Forms */
 input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea, select {
   height: 38px;
-  padding: 6px 10px;
-  /* The 6px vertically centers text on FF, ignored by Webkit */
-  background-color: #fff;
-  border: 1px solid #D1D1D1;
+  padding: 0.5rem 1rem;
+  background-color: #FFFFFF;
+  border: 1px solid #9A9A9A;
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box;
-  width: 90%;
-  margin: inherit 5% inherit 5%; }
+  width: 83.33333%;
+  margin-left: 8.33333%;
+  margin-right: 8.33333%; }
 
 /* Removes awkward default styles on some inputs for iOS */
 input[type="email"], input[type="number"], input[type="search"], input[type="text"],
@@ -850,8 +850,11 @@ input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focu
 
 label, legend {
   display: block;
-  margin-bottom: .5rem;
-  font-weight: 600; }
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  width: 83.33333%;
+  margin-left: 8.33333%;
+  margin-right: 8.33333%; }
 
 fieldset {
   padding: 0;
@@ -862,7 +865,7 @@ input[type="checkbox"], input[type="radio"] {
 
 label > .label-body {
   display: inline-block;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
   font-weight: normal; }
 
 /* Lists */
@@ -880,15 +883,14 @@ ol, ul {
   margin-top: 0; }
 
 ul ul, ul ol, ol ol, ol ul {
-  margin: 1.5rem 0 1.5rem 3rem;
-  font-size: 90%; }
+  margin: 0.5rem 0 0.5rem 1rem; }
 
 li {
-  margin-bottom: 1rem; }
+  margin-bottom: 0.5rem; }
 
 /* Spacing */
 button, .button {
-  margin-bottom: 1rem; }
+  margin-bottom: 0.5rem; }
 
 input, textarea, select, fieldset {
   margin-bottom: 1rem; }
@@ -1045,42 +1047,42 @@ pre, blockquote, dl, figure, table, ul, ol, form {
   background: #9A9A9A;
   display: block;
   height: 2px;
-  margin: 15px auto;
+  margin: 0.5rem auto;
   width: 80px; }
 
 .bar-white {
   background: #FFFFFF;
   display: block;
   height: 2px;
-  margin: 15px auto;
+  margin: 0.5rem auto;
   width: 80px; }
 
 .bar-primary {
   background: #EF4857;
   display: block;
   height: 2px;
-  margin: 15px auto;
+  margin: 0.5rem auto;
   width: 80px; }
 
 .bar-secondary {
   background: #48AAEF;
   display: block;
   height: 2px;
-  margin: 15px auto;
+  margin: 0.5rem auto;
   width: 80px; }
 
 .bar-thirdly {
   background: #48EF94;
   display: block;
   height: 2px;
-  margin: 15px auto;
+  margin: 0.5rem auto;
   width: 80px; }
 
 .bar-fourthly {
   background: #EFAC48;
   display: block;
   height: 2px;
-  margin: 15px auto;
+  margin: 0.5rem auto;
   width: 80px; }
 
 .block {

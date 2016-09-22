@@ -108,8 +108,8 @@ h6,.h6 {font-size:$h6; line-height:100%; letter-spacing:0;}
 .text-right {text-align:right;}
 .text-justify {text-align:justify;}
 
-hr {margin-top:$dim1; margin-bottom:$dim2; border-width:0; border-top:1px solid $grey-light;}
-p {font-size:1.0rem; line-height:$text-height;}
+hr {margin-top:$dim1; margin-bottom:$dim2; border-width:$dim0; border-top:1px solid $grey-light;}
+p {font-size:$dim2; line-height:$text-height;}
 a {color:$link-color; font-weight:$text-weight-bold;}
 a:hover, a:active , a:focus {text-decoration:none; color:inherit;}
 
@@ -400,35 +400,71 @@ html {font-size:14px;}
 }
 
 .container {position:relative; margin:0 auto; padding:0 1rem; box-sizing:border-box; clear:both;}
+
 .container:after, .row:after {content:""; display:table; clear:both; }
 
 /* Buttons */
 .button,button, input[type="submit"],input[type="reset"],input[type="button"] 
-{display:inline-block; height:38px; padding:$dim0 $dim1; color:$grey-dark; text-align:center; font-size:0.7rem; font-weight:600; line-height:38px; letter-spacing:0.1rem; text-transform:uppercase; text-decoration:none; white-space:nowrap; background-color:transparent; border-radius:4px; border:1px solid $grey-dark; cursor:pointer; box-sizing:border-box; }
+{
+display:inline-block;
+height:38px;
+padding:$dim0 $dim1;
+color:$grey-dark;
+text-align:center;
+font-size:0.7rem;
+font-weight:600;
+line-height:38px;
+letter-spacing:0.1rem;
+text-transform:uppercase;
+text-decoration:none;
+white-space:nowrap;
+background-color:transparent;
+border-radius:4px;
+border:1px solid $grey-dark;
+cursor:pointer;
+box-sizing:border-box;
+}
 
 /* Button hover */
 .button:hover,button:hover,input[type="submit"]:hover,input[type="reset"]:hover,input[type="button"]:hover,.button:focus,
 button:focus,input[type="submit"]:focus, input[type="reset"]:focus, input[type="button"]:focus 
-{color:$grey-dark; border-color:$grey-medium; outline:0; }
+{
+color:$grey-dark; 
+border-color:$grey-medium;
+outline:0; 
+}
 
-.button.button-primary,button.button-primary,input[type="submit"].button-primary,input[type="reset"].button-primary,input[type="button"].button-primary {color:$white; background-color:#33C3F0; border-color:#33C3F0; }
+.button.button-primary,button.button-primary,input[type="submit"].button-primary,input[type="reset"].button-primary,input[type="button"].button-primary 
+{
+color:$white;
+background-color:#33C3F0;
+border-color:#33C3F0;
+}
 
 .button.button-primary:hover, button.button-primary:hover, input[type="submit"].button-primary:hover, input[type="reset"].button-primary:hover,
 input[type="button"].button-primary:hover,.button.button-primary:focus,
 button.button-primary:focus,input[type="submit"].button-primary:focus,
-input[type="reset"].button-primary:focus,input[type="button"].button-primary:focus {color:#FFF; background-color:#1EAEDB; border-color:#1EAEDB; }
+input[type="reset"].button-primary:focus,input[type="button"].button-primary:focus
+{
+color:$white;
+background-color:#1EAEDB;
+border-color:#1EAEDB;
+}
 
 
 /* Forms */
-input[type="email"],input[type="number"],input[type="search"],input[type="text"],input[type="tel"],input[type="url"],input[type="password"],textarea,select {
-height:38px;  padding:6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
-background-color:#fff; 
-border:1px solid #D1D1D1;
+input[type="email"],input[type="number"],input[type="search"],input[type="text"],input[type="tel"],input[type="url"],input[type="password"],textarea,select 
+{
+height:38px;  
+padding:$dim1 $dim2;
+background-color:$white; 
+border:1px solid $grey-dark;
 border-radius:4px;
 box-shadow:none;
 box-sizing:border-box;
-width:90%;
-margin:inherit 5% inherit 5%;
+width:$dimwidth10;
+margin-left:$dimwidth1;
+margin-right:$dimwidth1;
 }
 
 /* Removes awkward default styles on some inputs for iOS */
@@ -436,22 +472,43 @@ input[type="email"],input[type="number"],input[type="search"],input[type="text"]
 input[type="tel"],input[type="url"],input[type="password"],textarea {-webkit-appearance:none; -moz-appearance:none; appearance:none; }
 
 textarea {min-height:65px; padding-top:$dim1; padding-bottom:$dim1; }
-input[type="email"]:focus,input[type="number"]:focus,input[type="search"]:focus,input[type="text"]:focus,input[type="tel"]:focus,input[type="url"]:focus,input[type="password"]:focus,textarea:focus,select:focus {border:1px solid $secondary-color; outline:0; }
-label,legend {display:block; margin-bottom:.5rem; font-weight:600; }
-fieldset {padding:0; border-width:0; }
-input[type="checkbox"],input[type="radio"] {display:inline; }
-label > .label-body {display:inline-block; margin-left:.5rem;  font-weight:normal; }
+input[type="email"]:focus,input[type="number"]:focus,input[type="search"]:focus,input[type="text"]:focus,input[type="tel"]:focus,input[type="url"]:focus,input[type="password"]:focus,textarea:focus,select:focus {
+border:1px solid $secondary-color; outline:0; 
+}
+
+label,legend {
+display:block; 
+margin-bottom:$dim1;
+font-weight:600; 
+width:$dimwidth10;
+margin-left:$dimwidth1;
+margin-right:$dimwidth1;
+}
+
+fieldset {
+padding:$dim0; 
+border-width:$dim0; 
+}
+
+input[type="checkbox"],input[type="radio"] {
+display:inline; 
+}
+label > .label-body {
+display:inline-block;
+margin-left:$dim1;
+font-weight:normal;
+}
 
 /* Lists */
 .nolist {list-style:none;} 
 ul {list-style:circle inside; }
 ol {list-style:decimal inside; }
-ol, ul {padding-left:0; margin-top:0; }
-ul ul, ul ol, ol ol, ol ul {margin:1.5rem 0 1.5rem 3rem; font-size:90%;}
-li {margin-bottom:1rem; }
+ol, ul {padding-left:$dim0; margin-top:$dim0;}
+ul ul, ul ol, ol ol, ol ul {margin:$dim1 0 $dim1 $dim2;}
+li {margin-bottom:$dim1;}
 
 /* Spacing */
-button, .button {margin-bottom:1rem;}
+button, .button {margin-bottom:$dim1;}
 input, textarea, select, fieldset {margin-bottom:$dim2; }
 pre,blockquote,dl,figure,table,ul,ol,form {margin-bottom:$dim2;}
 
@@ -461,7 +518,7 @@ pre,blockquote,dl,figure,table,ul,ol,form {margin-bottom:$dim2;}
 .clear {clear:both;}
 
 /* Images */
-.img-cover {width:100%; display:block;}
+.img-cover {width:$dimwidth12; display:block;}
 
 /* Shadow */
 .shadow1 {box-shadow:0 4px 3px 1px #E0DFDF;}
@@ -520,16 +577,15 @@ pre,blockquote,dl,figure,table,ul,ol,form {margin-bottom:$dim2;}
 .border-fourthly-r {border-right:1px solid $fourthly-color;}
 
 /* Title underbar */
+.bar-grey {background:$grey-dark; display:block; height:2px; margin:$dim1 auto; width:80px;}
+.bar-white {background:$white; display:block; height:2px; margin:$dim1 auto; width:80px;}
 
-.bar-grey {background:$grey-dark; display:block; height:2px; margin:15px auto; width:80px;}
-.bar-white {background:$white; display:block; height:2px; margin:15px auto; width:80px;}
+.bar-primary {background:$primary-color; display:block; height:2px; margin:$dim1 auto; width:80px;}
+.bar-secondary {background:$secondary-color; display:block; height:2px; margin:$dim1 auto; width:80px;}
+.bar-thirdly {background:$thirdly-color; display:block; height:2px; margin:$dim1 auto; width:80px;}
+.bar-fourthly {background:$fourthly-color; display:block; height:2px; margin:$dim1 auto; width:80px;}
 
-.bar-primary {background:$primary-color; display:block; height:2px; margin:15px auto; width:80px;}
-.bar-secondary {background:$secondary-color; display:block; height:2px; margin:15px auto; width:80px;}
-.bar-thirdly {background:$thirdly-color; display:block; height:2px; margin:15px auto; width:80px;}
-.bar-fourthly {background:$fourthly-color; display:block; height:2px; margin:15px auto; width:80px;}
-
-.block{display:block;} 
+.block {display:block;} 
 .no-border {border:none;} 
 
 .iframe {width:100%; border:none;}
@@ -543,10 +599,10 @@ pre,blockquote,dl,figure,table,ul,ol,form {margin-bottom:$dim2;}
 .posr {position:relative;}
 .posa {position:absolute;}
 .posf {position:fixed;} 
-.top {top:0;} 
-.right {right:0;}
-.bottom {bottom:0;}
-.left {left:0;}
+.top {top:$dim0;} 
+.right {right:$dim0;}
+.bottom {bottom:$dim0;}
+.left {left:$dim0;}
 .clear {clear:both;}
 .overflow {overflow:hidden;}
 .cover {width:100%; height:auto; float:left;}
@@ -638,4 +694,3 @@ pre,blockquote,dl,figure,table,ul,ol,form {margin-bottom:$dim2;}
 .pm {padding-top:$dim4; padding-bottom:$dim4;}
 .pl {padding-top:$dim5; padding-bottom:$dim5;}
 .pxl {padding-top:$dim6; padding-bottom:$dim5;}
-

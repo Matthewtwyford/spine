@@ -22,19 +22,18 @@ Spine is simple and comes without all the bloat that comes with the many of the 
 <p>
 The idea is to replace all dimensional units with the more responsivie friendly Relative REM unit, as opposed to the absolute unit Px.
 </p>
-
 <p>
 Column. Units upto 12 columns layout.
 </p>
+
 <hr/>
+
 <h2>Todo</h2>
 <ul>
 <li>Remove all Px units - Working on</li>
-<li>Add  - html5 elements - Working on</li>
 <li>Finish and test media queries - Working on</li>
 <li>Button stlying - inverse - Working on </li>
 <li>Add code coding - Working on </li>
-<li>Add favicon - Working on</li>
 <li>Make Standard CSS verion - Working on</li>
 <li>Side project Jquery custom snippets - Working on</li>
 <li>Fix queries - Working on</li>
