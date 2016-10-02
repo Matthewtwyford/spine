@@ -6,7 +6,6 @@
 
 /* ------ S: VARS ------ */
 
-
 $breakpoint-xs:1em;
 $breakpoint-s:34em;
 $breakpoint-m:48em;
@@ -79,7 +78,6 @@ aside {}
 article {}
 section {}
 footer {}
-
 
 /* Show/hide */
 .xs-show{display:block;}
@@ -226,7 +224,6 @@ html {font-size:9px;}
 .l11 {width:$dimwidth12;}
 .l12 {width:$dimwidth12;}
 
-    
 }
 
 /* SMALL DEVICES - SM - Phablets (landscape phones, 34em and up) */
@@ -234,9 +231,9 @@ html {font-size:9px;}
 html {font-size:10px;} 
 .container {width:100%; max-width:$container-width;}
 	
-.s-text-center {text-align: center;}
-.s-text-left {text-align: left;}
-.s-text-right {text-align: right;}
+.s-text-center {text-align:center;}
+.s-text-left {text-align:left;}
+.s-text-right {text-align:right;}
     
 .xs1 {width:$dimwidth1!important;}
 .xs2 {width:$dimwidth2!important;}
@@ -296,9 +293,9 @@ html {font-size:10px;}
 html {font-size:13px;} 
 .container {width:100%; max-width:$container-width;}
 	
-.m-text-center {text-align: center;}
-.m-text-left {text-align: left;}
-.m-text-right {text-align: right;}
+.m-text-center {text-align:center;}
+.m-text-left {text-align:left;}
+.m-text-right {text-align:right;}
     
 .xs1 {width:$dimwidth1!important;}
 .xs2 {width:$dimwidth2!important;}
@@ -358,9 +355,9 @@ html {font-size:13px;}
 html {font-size:14px;}
 .container {width:100%; max-width:$container-width;}
 	
-.l-text-center {text-align: center;}
-.l-text-left {text-align: left;}
-.l-text-right {text-align: right;}
+.l-text-center {text-align:center;}
+.l-text-left {text-align:left;}
+.l-text-right {text-align:right;}
     
 .xs1 {width:$dimwidth1!important;}
 .xs2 {width:$dimwidth2!important;}
@@ -416,15 +413,14 @@ html {font-size:14px;}
     
 }
 
-.container {position:relative; margin:0 auto; padding:0 1rem; box-sizing:border-box; clear:both;}
-
+.container {position:relative; margin:0 auto; padding:0 $dim2; box-sizing:border-box; clear:both;}
 .container:after, .row:after {content:""; display:table; clear:both; }
 
 /* Buttons */
-.button,button, input[type="submit"],input[type="reset"],input[type="button"] 
+.button,button, input[type="submit"],input[type="reset"],input[type="button"], input
 {
 display:inline-block;
-padding:$dim0 $dim1;
+padding:$dim1 $dim1;
 color:$grey-dark;
 text-align:center;
 font-size:0.7rem;
@@ -466,7 +462,6 @@ background-color:#1EAEDB;
 border-color:#1EAEDB;
 }
 
-
 /* Forms */
 input[type="email"],input[type="number"],input[type="search"],input[type="text"],input[type="tel"],input[type="url"],input[type="password"],textarea,select 
 {
@@ -483,9 +478,11 @@ margin-right:$dimwidth1;
 
 /* Removes awkward default styles on some inputs for iOS */
 input[type="email"],input[type="number"],input[type="search"],input[type="text"],
-input[type="tel"],input[type="url"],input[type="password"],textarea {-webkit-appearance:none; -moz-appearance:none; appearance:none; }
+input[type="tel"],input[type="url"],input[type="password"],textarea {
+-webkit-appearance:none; -moz-appearance:none; appearance:none;
+}
 
-textarea {min-height:65px; padding-top:$dim1; padding-bottom:$dim1; }
+textarea {min-height:$dim4; padding-top:$dim1; padding-bottom:$dim1;}
 
 input[type="email"]:focus,input[type="number"]:focus,input[type="search"]:focus,input[type="text"]:focus,input[type="tel"]:focus,input[type="url"]:focus,input[type="password"]:focus,textarea:focus,select:focus {
 border:1px solid $secondary-color; 
@@ -493,27 +490,19 @@ outline:0;
 }
 
 label,legend {
-display:block; 
+display:block;
 margin-bottom:$dim1;
-font-weight:600; 
+font-weight:600;
 width:$dimwidth10;
 margin-left:$dimwidth1;
 margin-right:$dimwidth1;
 }
 
-fieldset {
-padding:$dim0; 
-border-width:$dim0; 
-}
+fieldset {padding:$dim0; border-width:$dim0;}
 
-input[type="checkbox"],input[type="radio"] {
-display:inline; 
-}
-label > .label-body {
-display:inline-block;
-margin-left:$dim1;
-font-weight:normal;
-}
+input[type="checkbox"],input[type="radio"] {display:inline;}
+
+label > .label-body { display:inline-block; margin-left:$dim1; font-weight:normal;}
 
 /* Lists */
 .nolist {list-style:none;} 

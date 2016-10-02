@@ -886,9 +886,9 @@ small {
   clear: both; }
 
 /* Buttons */
-.button, button, input[type="submit"], input[type="reset"], input[type="button"] {
+.button, button, input[type="submit"], input[type="reset"], input[type="button"], input {
   display: inline-block;
-  padding: 0 0.5rem;
+  padding: 0.5rem 0.5rem;
   color: #9A9A9A;
   text-align: center;
   font-size: 0.7rem;
@@ -943,7 +943,7 @@ input[type="tel"], input[type="url"], input[type="password"], textarea {
   appearance: none; }
 
 textarea {
-  min-height: 65px;
+  min-height: 5rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem; }
 
