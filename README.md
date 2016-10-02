@@ -33,10 +33,6 @@ Column. Units upto 12 columns layout.
 <li>Remove all Px units - Working on</li>
 <li>Finish and test media queries - Working on</li>
 <li>Button stlying - inverse - Working on </li>
-<li>Add code coding - Working on </li>
-<li>Make Standard CSS verion - Working on</li>
-<li>Side project Jquery custom snippets - Working on</li>
-<li>Fix queries - Working on</li>
 </ul>
 
 <h2>Acknowledgements</h2>

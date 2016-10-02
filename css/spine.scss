@@ -80,6 +80,7 @@ article {}
 section {}
 footer {}
 
+
 /* Show/hide */
 .xs-show{display:block;}
 .xs-hide{display:none;}
@@ -115,7 +116,7 @@ a:hover, a:active , a:focus {text-decoration:none; color:inherit;}
 
 italic, .italic {font-style:italic;}
 b,.bold{font-weight:bold;} 
-small {color:inherit; font-weight:200; font-size:0.8rem;}
+small {color:inherit; font-weight:200; font-size:0.7rem;}
 
 .uppercase {text-transform:uppercase;}
 .lowercase {text-transform:capitalize;}
@@ -169,6 +170,10 @@ position:relative;
 @media (min-width:$breakpoint-xs) {
 html {font-size:9px;}
 .container {width:100%;}
+	
+.xs-text-center {text-align: center;}
+.xs-text-left {text-align: left;}
+.xs-text-right {text-align: right;}
 
 .xs1 {width:$dimwidth1!important;}
 .xs2 {width:$dimwidth2!important;}
@@ -183,7 +188,7 @@ html {font-size:9px;}
 .xs11 {width:$dimwidth11!important;}
 .xs12 {width:$dimwidth12!important;}
 
-/*
+/* */
 .s1 {width:$dimwidth12;}
 .s2 {width:$dimwidth12;}
 .s3 {width:$dimwidth12;}
@@ -220,7 +225,7 @@ html {font-size:9px;}
 .l10 {width:$dimwidth12;}
 .l11 {width:$dimwidth12;}
 .l12 {width:$dimwidth12;}
-*/
+
     
 }
 
@@ -228,6 +233,10 @@ html {font-size:9px;}
 @media (min-width:$breakpoint-s) {
 html {font-size:10px;} 
 .container {width:100%; max-width:$container-width;}
+	
+.s-text-center {text-align: center;}
+.s-text-left {text-align: left;}
+.s-text-right {text-align: right;}
     
 .xs1 {width:$dimwidth1!important;}
 .xs2 {width:$dimwidth2!important;}
@@ -286,6 +295,10 @@ html {font-size:10px;}
 @media (min-width:$breakpoint-m) {
 html {font-size:13px;} 
 .container {width:100%; max-width:$container-width;}
+	
+.m-text-center {text-align: center;}
+.m-text-left {text-align: left;}
+.m-text-right {text-align: right;}
     
 .xs1 {width:$dimwidth1!important;}
 .xs2 {width:$dimwidth2!important;}
@@ -344,6 +357,10 @@ html {font-size:13px;}
 @media (min-width:$breakpoint-l) {
 html {font-size:14px;}
 .container {width:100%; max-width:$container-width;}
+	
+.l-text-center {text-align: center;}
+.l-text-left {text-align: left;}
+.l-text-right {text-align: right;}
     
 .xs1 {width:$dimwidth1!important;}
 .xs2 {width:$dimwidth2!important;}
@@ -407,19 +424,17 @@ html {font-size:14px;}
 .button,button, input[type="submit"],input[type="reset"],input[type="button"] 
 {
 display:inline-block;
-height:38px;
 padding:$dim0 $dim1;
 color:$grey-dark;
 text-align:center;
 font-size:0.7rem;
 font-weight:600;
-line-height:38px;
 letter-spacing:0.1rem;
 text-transform:uppercase;
 text-decoration:none;
 white-space:nowrap;
 background-color:transparent;
-border-radius:4px;
+border-radius:$dim1;
 border:1px solid $grey-dark;
 cursor:pointer;
 box-sizing:border-box;
@@ -455,11 +470,10 @@ border-color:#1EAEDB;
 /* Forms */
 input[type="email"],input[type="number"],input[type="search"],input[type="text"],input[type="tel"],input[type="url"],input[type="password"],textarea,select 
 {
-height:38px;  
 padding:$dim1 $dim2;
 background-color:$white; 
 border:1px solid $grey-dark;
-border-radius:4px;
+border-radius:$dim1;
 box-shadow:none;
 box-sizing:border-box;
 width:$dimwidth10;
@@ -472,8 +486,10 @@ input[type="email"],input[type="number"],input[type="search"],input[type="text"]
 input[type="tel"],input[type="url"],input[type="password"],textarea {-webkit-appearance:none; -moz-appearance:none; appearance:none; }
 
 textarea {min-height:65px; padding-top:$dim1; padding-bottom:$dim1; }
+
 input[type="email"]:focus,input[type="number"]:focus,input[type="search"]:focus,input[type="text"]:focus,input[type="tel"]:focus,input[type="url"]:focus,input[type="password"]:focus,textarea:focus,select:focus {
-border:1px solid $secondary-color; outline:0; 
+border:1px solid $secondary-color; 
+outline:0; 
 }
 
 label,legend {
